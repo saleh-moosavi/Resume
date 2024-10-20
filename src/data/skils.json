@@ -1,0 +1,56 @@
+[
+  {
+    "title": "HTML",
+    "bgColor": "#E44D27",
+    "textColor": "#fff",
+    "img": "./assets/skills/html.svg"
+  },
+  {
+    "title": "CSS",
+    "bgColor": "#1572B6",
+    "textColor": "#fff",
+    "img": "./assets/skills/css3.svg"
+  },
+  {
+    "title": "Sass",
+    "bgColor": "#CC6699",
+    "textColor": "#fff",
+    "img": "./assets/skills/sass.svg"
+  },
+  {
+    "title": "Bootstrap",
+    "bgColor": "#6E2BF2",
+    "textColor": "#fff",
+    "img": "./assets/skills/bootstrap.svg"
+  },
+  {
+    "title": "Tailwind",
+    "bgColor": "#1A202C",
+    "textColor": "#fff",
+    "img": "./assets/skills/tailwind-css.svg"
+  },
+  {
+    "title": "JavaScript",
+    "bgColor": "#FFCE5A",
+    "textColor": "#000",
+    "img": "./assets/skills/js.svg"
+  },
+  {
+    "title": "TypeScript",
+    "bgColor": "#1976D2",
+    "textColor": "#fff",
+    "img": "./assets/skills/typescript.svg"
+  },
+  {
+    "title": "Git",
+    "bgColor": "#F05032",
+    "textColor": "#fff",
+    "img": "./assets/skills/git.svg"
+  },
+  {
+    "title": "React",
+    "bgColor": "#282C34",
+    "textColor": "#fff",
+    "img": "./assets/skills/react.svg"
+  }
+]

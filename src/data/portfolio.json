@@ -1,0 +1,20 @@
+[
+    {
+        "title":"Title About The Work",
+        "isFavor":true,
+        "img":"./assets/portfolio/forex-jornal.png",
+        "link":"./assets/portfolio/forex-jornal.png"
+    },
+    {
+        "title":"I made a forex journal writing program that enters the results of the trades in it and stores these results in the localStorage and displays them in a list and you can edit or delete these results and also with the copy button , Get content data from localStorage",
+        "isFavor":true,
+        "img":"./assets/portfolio/forex-jornal.png",
+        "link":"https://forex-journal.vercel.app/"
+    },
+    {
+        "title":"Title About The Work",
+        "isFavor":true,
+        "img":"./assets/portfolio/forex-jornal.png",
+        "link":"./assets/portfolio/forex-jornal.png"
+    }
+]
