@@ -2,11 +2,11 @@ import data from "../../data/portfolio.json";
 
 export default function WorksIndex() {
   return (
-    <div className="w-screen bg-black dark:bg-white dark:text-black text-white">
-      <section className="w-full lg:max-w-screen-2xl grid gap-5 md:grid-cols-2 lg:grid-cols-3 pt-24 px-10 justify-items-center">
-        {data.map((item: any) => {
+    <div className="w-screen">
+      <section className="w-full grid gap-5 md:gap-10 md:grid-cols-2 lg:grid-cols-3 pt-24 px-20 justify-items-center">
+        {data.map((item: any , index:any) => {
           return (
-            <div>
+            <div key={index}>
               <div className="overflow-hidden rounded-lg dark:shadow-lg">
                 <img
                   className="hover:scale-105 hover:-rotate-1 transition-all duration-300"

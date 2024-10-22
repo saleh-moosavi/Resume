@@ -5,20 +5,23 @@ import AboutIndex from "./pages/about/AboutIndex";
 import BlogIndex from "./pages/blog/BlogIndex";
 import ContactIndex from "./pages/contact/ContactIndex";
 import WorksIndex from "./pages/works/WorksIndex";
-
+import Footer from "./components/Footer";
+import { useState } from "react";
 
 function App() {
+  const [isDark, setIsDark]:any = useState(false)
   return (
-    <div className="h-screen bg-black dark:bg-white dark:text-black text-white">
+    <div className="">
       <BrowserRouter>
-        <Header />
+        <Header isDark={isDark} setIsDark={setIsDark}/>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutIndex />} />
           <Route path="/blog" element={<BlogIndex />} />
-          <Route path="/contact" element={<ContactIndex />} />
+          <Route path="/contact" element={<ContactIndex isDark={isDark}/>} />
           <Route path="/works" element={<WorksIndex />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

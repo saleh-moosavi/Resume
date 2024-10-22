@@ -3,7 +3,7 @@ import Portfolio from "./Portfolio";
 
 export default function Index() {
   return (
-    <div className="bg-black dark:bg-white dark:text-black text-white">
+    <div className="">
       <Info />
       <Portfolio/>
     </div>
