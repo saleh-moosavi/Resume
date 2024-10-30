@@ -19,19 +19,18 @@ export default function ContactIndex(props: any) {
       <p className="text-lg font-semibold fade-in">Or</p>
       <ul className="flex *:mx-5 items-center mt-5 fade-in">
         {/* telegram */}
-        <li>
+        <li className="hover:-translate-y-2 transition-all duration-500">
           <a href="https://t.me/Smous" target="_blank">
             <img
               className="w-10"
               src={`./assets/contact/telegram-${
                 darkMood ? "black" : "white"
               }.svg`}
-              alt=""
             />
           </a>
         </li>
         {/* linkedin */}
-        <li>
+        <li className="hover:-translate-y-2 transition-all duration-500">
           <a href="">
             <img
               className="w-10"
@@ -43,7 +42,7 @@ export default function ContactIndex(props: any) {
           </a>
         </li>
         {/* github */}
-        <li>
+        <li className="hover:-translate-y-2 transition-all duration-500">
           <a href="https://github.com/saleh-moosavi" target="_blank">
             <img
               className="w-10"
@@ -55,7 +54,7 @@ export default function ContactIndex(props: any) {
           </a>
         </li>
         {/* email */}
-        <li>
+        <li className="hover:-translate-y-2 transition-all duration-500">
           <a href="mailto:https://salehmoosavi77@gmail.com" target="_blank">
             <img
               className="w-10"

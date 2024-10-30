@@ -1,0 +1,27 @@
+import { Link } from "react-router-dom";
+
+export default function NavBarSide({ isClose , handleSideBar }: any) {
+  return (
+    <div>
+      <ul
+        className={`flex flex-col gap-y-5 fixed top-0 bottom-0 right-0 w-1/2 p-10 hover:*:cursor-pointer bg-gray-800 dark:bg-gray-300 shadow-lg z-[1000] text-lg font-semibold *:transition-all *:duration-300 transition-all duration-300 ${isClose ? "translate-x-full" : "translate-x-0"}`}
+      >
+        <li onClick={handleSideBar} className="text-orange-500 hover:scale-125 hover:text-rose-600 dark:hover:text-rose-600 w-fit">
+          X
+        </li>
+        <li className="dark:*:text-black  hover:*:text-stone-300 dark:hover:*:text-stone-500">
+          <Link to="works">WORKS</Link>
+        </li>
+        <li className="dark:*:text-black hover:*:text-stone-300 dark:hover:*:text-stone-500">
+          <Link to="blog">BLOG</Link>
+        </li>
+        <li className="dark:*:text-black hover:*:text-stone-300 dark:hover:*:text-stone-500">
+          <Link to="about">ABOUT</Link>
+        </li>
+        <li className="dark:*:text-black hover:*:text-stone-300 dark:hover:*:text-stone-500">
+          <Link to="contact">CONTACT</Link>
+        </li>
+      </ul>
+    </div>
+  );
+}
