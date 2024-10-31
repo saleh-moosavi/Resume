@@ -1,4 +1,10 @@
-export default function SkillBtn(props: any) {
+interface SkillBtnType {
+  bgColor: string;
+  icon: string;
+  title: string;
+}
+
+export default function SkillBtn(props: SkillBtnType) {
   return (
     <button
       className="flex items-center px-3 py-3 rounded-lg relative group z-20"

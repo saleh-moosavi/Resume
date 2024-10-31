@@ -9,16 +9,16 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
-  const [isDark, setIsDark]:any = useState(false)
+  const [isDark, setIsDark] = useState<boolean>(false);
   return (
     <div className="">
       <BrowserRouter>
-        <Header isDark={isDark} setIsDark={setIsDark}/>
+        <Header isDark={isDark} setIsDark={setIsDark} />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutIndex />} />
           <Route path="/blog" element={<BlogIndex />} />
-          <Route path="/contact" element={<ContactIndex isDark={isDark}/>} />
+          <Route path="/contact" element={<ContactIndex isDark={isDark} />} />
           <Route path="/works" element={<WorksIndex />} />
         </Routes>
         <Footer />

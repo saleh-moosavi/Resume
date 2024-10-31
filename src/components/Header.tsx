@@ -1,13 +1,18 @@
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import NavBarSide from "./NavBarSide";
 
-export default function Header(props: any) {
-  const [windowScrollY, setWindowScrollY] = useState(window.scrollY);
-  const [windowSize, setwindowSize] = useState(window.innerWidth);
-  const [darkMode, setDarkMode] = useState(false);
-  const [isClose, setIsClose] = useState(true);
+interface HeaderType {
+  isDark: boolean;
+  setIsDark: Dispatch<SetStateAction<boolean>>;
+}
+
+export default function Header(props: HeaderType) {
+  const [windowScrollY, setWindowScrollY] = useState<number>(window.scrollY);
+  const [windowSize, setwindowSize] = useState<number>(window.innerWidth);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [isClose, setIsClose] = useState<boolean>(true);
 
   useEffect(() => {
     function handleScroll() {
@@ -31,14 +36,18 @@ export default function Header(props: any) {
     document.documentElement.classList.toggle("dark");
   };
 
-  const toggleSideBar = ()=> {
-    setIsClose(!isClose)
-    isClose ? document.documentElement.classList.add("overflow-hidden") : document.documentElement.classList.remove("overflow-hidden")
-  }
+  const toggleSideBar = () => {
+    setIsClose(!isClose);
+    isClose
+      ? document.documentElement.classList.add("overflow-hidden")
+      : document.documentElement.classList.remove("overflow-hidden");
+  };
 
   return (
     <>
-      {windowSize <= 769 && <NavBarSide isClose={isClose} handleSideBar={toggleSideBar}/>}
+      {windowSize <= 769 && (
+        <NavBarSide isClose={isClose} handleSideBar={toggleSideBar} />
+      )}
       <div
         //check scroll for adding shadow and blur to navbar
         className={`flex justify-between w-full z-20 text-white px-5 py-3 items-center fixed top-0 right-0 left-0 transition-all duration-500 ${

@@ -4,7 +4,7 @@ import PortfolioItem from "./PortfolioItem";
 export default function Portfolio() {
   return (
     <div className="pb-20 px-10 md:px-20">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mb-10 p-5">
         <h1 className="md:text-3xl text-2xl font-semibold select-none">
           Works
         </h1>

@@ -7,7 +7,7 @@ export default function AboutIndex() {
   return (
     <div className="grid lg:grid-cols-2 gap-y-10 justify-items-center items-center gap-x-5 pt-20 pb-10 px-5 min-h-screen max-w-7xl mx-auto">
       {/* about me sect */}
-      <article className="p-3 rounded-lg self-center relative max-w-[35rem] w-full shadow-[2px_2px_8px_#fff] dark:shadow-[2px_2px_8px_#000]">
+      <article className="rounded-lg self-center relative max-w-[35rem] w-full shadow-[2px_2px_8px_#fff] dark:shadow-[2px_2px_8px_#000] p-5">
         <h2 className="absolute -top-4 font-semibold text-2xl xl:text-3xl xl:-top-5">
           About Me
         </h2>
@@ -30,7 +30,7 @@ export default function AboutIndex() {
         </Link>
       </article>
       {/* skills sect */}
-      <section className="w-full flex flex-col gap-10 lg:gap-20 max-w-[35rem]">
+      <section className="w-full flex flex-col gap-10 lg:gap-24 max-w-[35rem]">
         {/* Languages & Tools sect */}
         <article className="p-3 rounded-lg relative w-full my-10 lg:my-0 shadow-[2px_2px_8px_#fff] dark:shadow-[2px_2px_8px_#000]">
           <h2 className="absolute -top-4 font-semibold text-2xl xl:text-3xl xl:-top-5">
