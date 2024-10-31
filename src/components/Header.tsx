@@ -15,6 +15,15 @@ export default function Header(props: HeaderType) {
   const [isClose, setIsClose] = useState<boolean>(true);
 
   useEffect(() => {
+    //check dark or light mode from last closing of page
+    localStorage.getItem("isDark")
+      ? setDarkMode(JSON.parse(localStorage.getItem("isDark") || ""))
+      : localStorage.setItem("isDark", JSON.stringify(darkMode));
+    if (JSON.parse(localStorage.getItem("isDark") || "")) {
+      document.documentElement.classList.add("dark");
+      props.setIsDark(true);
+    }
+
     function handleScroll() {
       setWindowScrollY(window.scrollY);
     }
@@ -31,6 +40,7 @@ export default function Header(props: HeaderType) {
 
   //change darkMode and lightMode (More in tailwind.config.js)
   const toggleDarkMode = () => {
+    localStorage.setItem("isDark", JSON.stringify(!darkMode));
     setDarkMode(!darkMode);
     props.setIsDark(!darkMode);
     document.documentElement.classList.toggle("dark");
