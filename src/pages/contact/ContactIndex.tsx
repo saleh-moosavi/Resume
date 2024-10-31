@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-export default function ContactIndex(props: { isDark: string }) {
+export default function ContactIndex(props: { isDark: boolean }) {
   //define a variable to track dark/light mood
-  const [darkMood, setDarkMood] = useState<undefined | string>(undefined);
+  const [darkMood, setDarkMood] = useState<undefined | boolean>(undefined);
 
   useEffect(() => {
     setDarkMood(props.isDark);
