@@ -1,63 +1,74 @@
 [
-    {
-        "title":"Title About The Work",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "link":"./assets/portfolio/forex-jornal.png"
-    },
-    {
-        "title":"I made a forex journal writing program that enters the results of the trades in it and stores these results in the localStorage and displays them in a list and you can edit or delete these results and also with the copy button , Get content data from localStorage",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "imgDark":"./assets/portfolio/forex-jornal.png",
-        "link":"https://forex-journal.vercel.app/"
-    },
-    {
-        "title":"Title About The Work",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "link":"./assets/portfolio/forex-jornal.png"
-    },
-    {
-        "title":"Title About The Work",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "link":"./assets/portfolio/forex-jornal.png"
-    },
-    {
-        "title":"Title About The Work",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "link":"./assets/portfolio/forex-jornal.png"
-    },
-    {
-        "title":"Title About The Work",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "link":"./assets/portfolio/forex-jornal.png"
-    },
-    {
-        "title":"Title About The Work",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "link":"./assets/portfolio/forex-jornal.png"
-    },
-    {
-        "title":"Title About The Work",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "link":"./assets/portfolio/forex-jornal.png"
-    },
-    {
-        "title":"Title About The Work",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "link":"./assets/portfolio/forex-jornal.png"
-    },
-    {
-        "title":"Title About The Work",
-        "isFavor":true,
-        "img":"./assets/portfolio/forex-jornal.png",
-        "link":"./assets/portfolio/forex-jornal.png"
-    }
+  {
+    "title": "Forex Journal",
+    "desc": "some text about this work",
+    "isFavor": true,
+    "img": "./assets/portfolio/forex-journal-light.png",
+    "imgDark": "./assets/portfolio/forex-journal-dark.png",
+    "link": "https://forex-journal.vercel.app/"
+  },
+  {
+    "title": "Tic Tac Toe",
+    "desc": "some text about this work",
+    "isFavor": true,
+    "img": "./assets/portfolio/tic-tac-toe-light.png",
+    "imgDark": "./assets/portfolio/tic-tac-toe-dark.png",
+    "link": "https://tic-tac-toe-plays.vercel.app/"
+  },
+  {
+    "title": "Filimora",
+    "desc": "some text about this work",
+    "isFavor": true,
+    "img": "./assets/portfolio/filimora-light.png",
+    "imgDark": "./assets/portfolio/filimora-dark.png",
+    "link": "https://filimora.vercel.app/"
+  },
+  {
+    "title": "Forex Journal",
+    "desc": "some text about this work",
+    "isFavor": false,
+    "img": "./assets/portfolio/forex-journal-light.png",
+    "imgDark": "./assets/portfolio/forex-journal-dark.png",
+    "link": "https://forex-journal.vercel.app/"
+  },
+  {
+    "title": "Tic Tac Toe",
+    "desc": "some text about this work",
+    "isFavor": false,
+    "img": "./assets/portfolio/tic-tac-toe-light.png",
+    "imgDark": "./assets/portfolio/tic-tac-toe-dark.png",
+    "link": "https://tic-tac-toe-plays.vercel.app/"
+  },
+  {
+    "title": "Filimora",
+    "desc": "some text about this work",
+    "isFavor": false,
+    "img": "./assets/portfolio/filimora-light.png",
+    "imgDark": "./assets/portfolio/filimora-dark.png",
+    "link": "https://filimora.vercel.app/"
+  },
+  {
+    "title": "Forex Journal",
+    "desc": "some text about this work",
+    "isFavor": false,
+    "img": "./assets/portfolio/forex-journal-light.png",
+    "imgDark": "./assets/portfolio/forex-journal-dark.png",
+    "link": "https://forex-journal.vercel.app/"
+  },
+  {
+    "title": "Tic Tac Toe",
+    "desc": "some text about this work",
+    "isFavor": false,
+    "img": "./assets/portfolio/tic-tac-toe-light.png",
+    "imgDark": "./assets/portfolio/tic-tac-toe-dark.png",
+    "link": "https://tic-tac-toe-plays.vercel.app/"
+  },
+  {
+    "title": "Filimora",
+    "desc": "some text about this work",
+    "isFavor": false,
+    "img": "./assets/portfolio/filimora-light.png",
+    "imgDark": "./assets/portfolio/filimora-dark.png",
+    "link": "https://filimora.vercel.app/"
+  }
 ]
