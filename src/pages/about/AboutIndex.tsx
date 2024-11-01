@@ -13,8 +13,8 @@ export default function AboutIndex() {
         </h2>
         <div className="py-5">
           <img
-            className="w-full max-w-[35rem] rounded-lg h-72 object-cover "
-            src="https://aiofilm3.ir/wp-content/uploads/2023/12/image_2023-12-23_002711622.jpg"
+            className="w-full max-w-[35rem] rounded-lg h-72 object-cover"
+            src="https://avatars.githubusercontent.com/u/184298358?v=4"
           />
         </div>
         <h2 className="text-center font-bold text-2xl md:my-5">

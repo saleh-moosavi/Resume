@@ -2,8 +2,8 @@ import data from "../../data/portfolio.json";
 
 export default function WorksIndex(props: { isDark: boolean }) {
   return (
-    <div className="w-screen min-h-screen">
-      <section className="w-full grid gap-5 md:gap-10 md:grid-cols-2 lg:grid-cols-3 pt-24 px-20 justify-items-center">
+    <div className="w-screen min-h-screen pb-10">
+      <section className="w-full grid gap-5 md:gap-10 md:grid-cols-2 lg:grid-cols-3 pt-24 px-5 md:px-20 justify-items-center">
         {data.map(
           (
             item: {
