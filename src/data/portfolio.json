@@ -8,6 +8,14 @@
     "link": "https://filimora.vercel.app/"
   },
   {
+    "title": "Foodie",
+    "desc": "some text about this work",
+    "isFavor": true,
+    "img": "./assets/portfolio/foodie-light.png",
+    "imgDark": "./assets/portfolio/foodie-dark.png",
+    "link": "https://online-foodie.vercel.app/"
+  },
+  {
     "title": "Incore",
     "desc": "some text about this work",
     "isFavor": true,
@@ -18,7 +26,7 @@
   {
     "title": "Glow Up",
     "desc": "some text about this work",
-    "isFavor": true,
+    "isFavor": false,
     "img": "./assets/portfolio/glow-up-light.png",
     "imgDark": "./assets/portfolio/glow-up-dark.png",
     "link": "https://glow-up-xi.vercel.app/"
