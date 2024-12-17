@@ -16,6 +16,14 @@
     "link": "https://online-foodie.vercel.app/"
   },
   {
+    "title": "Next-Play",
+    "desc": "some text about this work",
+    "isFavor": true,
+    "img": "./assets/portfolio/next-play-light.png",
+    "imgDark": "./assets/portfolio/next-play-dark.png",
+    "link": "https://next-play-green.vercel.app/"
+  },
+  {
     "title": "Incore",
     "desc": "some text about this work",
     "isFavor": true,
