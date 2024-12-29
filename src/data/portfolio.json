@@ -8,7 +8,6 @@
       "React",
       "Redux_Toolkit",
       "Tailwind",
-      "Tailwind",
       "React_Icons",
       "React_Router",
       "Swipper"
@@ -31,8 +30,15 @@
   {
     "id": 3,
     "title": "Next-Play",
-    "desc": "some text about this work",
-    "techs": [""],
+    "desc": "a game store that allows users to purchase games, read articles about various games, and watch new trailers. The platform aims to provide a comprehensive experience for gamers, combining e-commerce with engaging content.",
+    "techs": [
+      "TypeScript",
+      "React",
+      "Zustand",
+      "Tailwind",
+      "React_Icons",
+      "React_Router"
+    ],
     "isFavor": true,
     "img": "./assets/portfolio/next-play-light.png",
     "imgDark": "./assets/portfolio/next-play-dark.png",
