@@ -20,8 +20,14 @@
   {
     "id": 2,
     "title": "Foodie",
-    "desc": "some text about this work",
-    "techs": [""],
+    "desc": "a visually appealing and user-friendly online food website designed to inspire and engage food enthusiasts. It features a clean and modern layout with sections for trending recipes, categorized meal options and a collection of delicious dishes.",
+    "techs": [
+      "TypeScript",
+      "React",
+      "Tailwind",
+      "React_Icons",
+      "React_Router"
+    ],
     "isFavor": true,
     "img": "./assets/portfolio/foodie-light.png",
     "imgDark": "./assets/portfolio/foodie-dark.png",
