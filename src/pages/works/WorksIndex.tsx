@@ -18,16 +18,22 @@ export default function WorksIndex(props: { isDark: boolean }) {
         {data.map((item: itemType) => {
           return (
             <a href={item.link} key={item.id} target="_blank">
-              <div className="move-in-down">
-                <div className="overflow-hidden rounded-lg dark:shadow-lg">
-                  <img
-                    className="hover:scale-105 hover:-rotate-1 transition-all duration-300"
-                    src={props.isDark ? item.img : item.imgDark}
-                    alt=""
-                  />
-                </div>
-                <h2 className="text-center pt-3 font-semibold">{item.title}</h2>
-                <p className="text-center text-sm">{item.desc}</p>
+              <div className="move-in-down h-full flex flex-col justify-between">
+                <section>
+                  <div className="overflow-hidden rounded-lg dark:shadow-lg">
+                    <img
+                      className="hover:scale-105 hover:-rotate-1 transition-all duration-300"
+                      src={props.isDark ? item.img : item.imgDark}
+                      alt={item.title}
+                    />
+                  </div>
+                  <article>
+                    <h2 className="text-center pt-3 font-semibold">
+                      {item.title}
+                    </h2>
+                    <p className="text-justify text-sm pt-2">{item.desc}</p>
+                  </article>
+                </section>
                 <ul className="text-xs text-justify mt-2 font-semibold flex flex-wrap justify-center gap-x-3">
                   <li>Techs : </li>
                   {item.techs.map((tech: string, index: number) => {
