@@ -99,8 +99,14 @@
   {
     "id": 8,
     "title": "Forex Journal",
-    "desc": "some text about this work",
-    "techs": [""],
+    "desc": "Forex Journal app is a practical tool for forex traders to track and analyze their trades effectively. It combines simplicity with powerful features, making it a valuable addition to any trader's toolkit.",
+    "techs": [
+      "TypeScript", 
+      "React", 
+      "Tailwind", 
+      "React_Icons", 
+      "React_Router"
+    ],
     "isFavor": false,
     "img": "./assets/portfolio/forex-journal-light.png",
     "imgDark": "./assets/portfolio/forex-journal-dark.png",
