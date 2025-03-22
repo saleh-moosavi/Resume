@@ -52,5 +52,23 @@
     "bgColor": "#282C34",
     "textColor": "#fff",
     "img": "./assets/skills/react.svg"
+  },
+  {
+    "title": "NextJs",
+    "bgColor": "#efefef",
+    "textColor": "#fff",
+    "img": "./assets/skills/nextjs.svg"
+  },
+  {
+    "title": "NodeJs",
+    "bgColor": "#2a2a2a",
+    "textColor": "#fff",
+    "img": "./assets/skills/nodejs.svg"
+  },
+  {
+    "title": "ExpressJs",
+    "bgColor": "#eeeeee",
+    "textColor": "#fff",
+    "img": "./assets/skills/expressjs.svg"
   }
 ]
