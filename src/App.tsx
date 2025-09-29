@@ -1,29 +1,35 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import AboutIndex from "./pages/about/AboutIndex";
-import BlogIndex from "./pages/blog/BlogIndex";
-import ContactIndex from "./pages/contact/ContactIndex";
-import WorksIndex from "./pages/works/WorksIndex";
 import Footer from "./components/Footer";
-import { useState } from "react";
-import Index from "./pages/main/Index";
+import { Loading } from "./components/Loading";
+import { lazy, useState, Suspense } from "react";
+import ErrorBoundary from "./components/ErrorBoundary";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+const Index = lazy(() => import("./pages/main/Index"));
+const BlogIndex = lazy(() => import("./pages/blog/BlogIndex"));
+const WorksIndex = lazy(() => import("./pages/works/WorksIndex"));
+const AboutIndex = lazy(() => import("./pages/about/AboutIndex"));
+const ContactIndex = lazy(() => import("./pages/contact/ContactIndex"));
 
 function App() {
   const [isDark, setIsDark] = useState<boolean>(false);
+
   return (
-    <div className="">
-      <BrowserRouter>
-        <Header isDark={isDark} setIsDark={setIsDark} />
-        <Routes>
-          <Route path="/" element={<Index isDark={isDark} />} />
-          <Route path="/about" element={<AboutIndex />} />
-          <Route path="/blog" element={<BlogIndex />} />
-          <Route path="/contact" element={<ContactIndex isDark={isDark} />} />
-          <Route path="/works" element={<WorksIndex isDark={isDark}/>} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Header isDark={isDark} setIsDark={setIsDark} />
+      <Suspense fallback={<Loading />}>
+        <ErrorBoundary>
+          <Routes>
+            <Route path="/" element={<Index isDark={isDark} />} />
+            <Route path="/about" element={<AboutIndex />} />
+            <Route path="/blog" element={<BlogIndex />} />
+            <Route path="/contact" element={<ContactIndex isDark={isDark} />} />
+            <Route path="/works" element={<WorksIndex isDark={isDark} />} />
+          </Routes>
+        </ErrorBoundary>
+      </Suspense>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

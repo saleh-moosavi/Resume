@@ -28,8 +28,10 @@ export default function Info() {
         <br />
         DEVELOPER
       </h1>
-      {/* <p className="w-[23.25rem] sm:w-[31rem] md:w-[41.5rem] lg:w-[52.54rem] text-xs sm:text-sm font-medium md:text-base">{info.desc}</p> */}
-      <div className="bg-white shadow-[0_0_15px_#fff] dark:shadow-[0_0_15px_#000] p-1 mt-10 md:mt-0 flex items-center rounded-full cursor-pointer animate-bounce">
+      <p className="w-[23.25rem] sm:w-[31rem] md:w-[41.5rem] lg:w-[52.54rem] text-xs sm:text-sm font-medium md:text-base">
+        {info.desc}
+      </p>
+      <div className="bg-white shadow-[0_0_15px_#fff] dark:shadow-[0_0_15px_#000] p-1 mt-10 flex items-center rounded-full cursor-pointer animate-bounce">
         <img src="./assets/Arrow-Down.svg" onClick={scrollToDown} />
       </div>
     </div>
