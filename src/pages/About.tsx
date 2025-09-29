@@ -1,7 +1,7 @@
-import Skills from "./Skills";
-import data from "../../data/info.json";
-import SoftSkills from "./SoftSkills";
+import data from "../data/info.json";
 import { Link } from "react-router-dom";
+import Skills from "../components/about/Skills";
+import SoftSkills from "../components/about/SoftSkills";
 
 export default function AboutIndex() {
   return (

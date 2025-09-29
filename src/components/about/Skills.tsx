@@ -1,4 +1,4 @@
-import SkillBtn from "../../components/SkillBtn";
+import SkillBtn from "../SkillBtn";
 import skills from "../../data/skils.json";
 
 export default function Skills() {

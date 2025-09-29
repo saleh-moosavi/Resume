@@ -1,5 +1,5 @@
-import Info from "./Info";
-import Portfolio from "./Portfolio";
+import Info from "../components/main/Info";
+import Portfolio from "../components/main/Portfolio";
 
 export default function Index(props: { isDark: boolean }) {
   return (

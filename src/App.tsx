@@ -5,11 +5,11 @@ import { lazy, useState, Suspense } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const Index = lazy(() => import("./pages/main/Index"));
-const BlogIndex = lazy(() => import("./pages/blog/BlogIndex"));
-const WorksIndex = lazy(() => import("./pages/works/WorksIndex"));
-const AboutIndex = lazy(() => import("./pages/about/AboutIndex"));
-const ContactIndex = lazy(() => import("./pages/contact/ContactIndex"));
+const Index = lazy(() => import("./pages/Main"));
+const Blog = lazy(() => import("./pages/Blog"));
+const Works = lazy(() => import("./pages/Works"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
   const [isDark, setIsDark] = useState<boolean>(false);
@@ -21,10 +21,10 @@ function App() {
         <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Index isDark={isDark} />} />
-            <Route path="/about" element={<AboutIndex />} />
-            <Route path="/blog" element={<BlogIndex />} />
-            <Route path="/contact" element={<ContactIndex isDark={isDark} />} />
-            <Route path="/works" element={<WorksIndex isDark={isDark} />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact isDark={isDark} />} />
+            <Route path="/works" element={<Works isDark={isDark} />} />
           </Routes>
         </ErrorBoundary>
       </Suspense>

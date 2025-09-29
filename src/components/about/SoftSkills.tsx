@@ -1,10 +1,6 @@
 import data from "../../data/info.json";
-interface infoType {
-  name: string;
-  desc: string;
-  skillDescBase: string;
-  softSkills: string[];
-}
+import { infoType } from "../../types/dataType";
+
 export default function SoftSkills() {
   const info: infoType = data[0];
   return (

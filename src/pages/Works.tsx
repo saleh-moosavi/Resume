@@ -1,21 +1,11 @@
-import data from "../../data/portfolio.json";
-
-type itemType = {
-  id: number;
-  title: string;
-  desc: string;
-  techs: string[];
-  isFavor: boolean;
-  img: string;
-  imgDark: string;
-  link: string;
-};
+import data from "../data/portfolio.json";
+import { portfolioType } from "../types/dataType";
 
 export default function WorksIndex(props: { isDark: boolean }) {
   return (
     <div className="w-screen min-h-screen pb-10 pt-24">
       <section className="w-full grid justify-items-center gap-5 md:gap-10 md:grid-cols-2 lg:grid-cols-3 px-5 md:px-20">
-        {data.map((item: itemType) => {
+        {data.map((item: portfolioType) => {
           return (
             <a href={item.link} key={item.id} target="_blank">
               <div className="move-in-down h-full flex flex-col justify-between">

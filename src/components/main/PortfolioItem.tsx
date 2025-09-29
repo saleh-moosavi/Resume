@@ -1,8 +1,8 @@
-import data from "../../data/portfolio.json";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import data from "../../data/portfolio.json";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function PortfolioItem(props: { isDark: boolean }) {
   return (
