@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
+import { NavBarSideType } from "../types/dataType";
 
-interface NavBarSideType {
-  isClose: boolean;
-  handleSideBar: () => void;
-}
+
 
 export default function NavBarSide({ isClose, handleSideBar }: NavBarSideType) {
   return (

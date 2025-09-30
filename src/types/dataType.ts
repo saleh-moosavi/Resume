@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react";
+
 export interface portfolioType {
   id: number;
   title: string;
@@ -14,4 +16,20 @@ export interface infoType {
   desc: string;
   skillDescBase: string;
   softSkills: string[];
+}
+
+export interface SkillBtnType {
+  bgColor: string;
+  icon: string;
+  title: string;
+}
+
+export interface HeaderType {
+  isDark: boolean;
+  setIsDark: Dispatch<SetStateAction<boolean>>;
+}
+
+export interface NavBarSideType {
+  isClose: boolean;
+  handleSideBar: () => void;
 }

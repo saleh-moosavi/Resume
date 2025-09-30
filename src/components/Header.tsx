@@ -1,12 +1,8 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import NavBarSide from "./NavBarSide";
-
-interface HeaderType {
-  isDark: boolean;
-  setIsDark: Dispatch<SetStateAction<boolean>>;
-}
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { HeaderType } from "../types/dataType";
 
 export default function Header(props: HeaderType) {
   const [windowScrollY, setWindowScrollY] = useState<number>(window.scrollY);
@@ -60,9 +56,9 @@ export default function Header(props: HeaderType) {
       )}
       <div
         //check scroll for adding shadow and blur to navbar
-        className={`flex justify-between w-full z-20 text-white px-5 py-3 items-center fixed top-0 right-0 left-0 transition-all duration-500 ${
+        className={`flex justify-between w-full z-20 px-5 py-3 items-center fixed top-0 right-0 left-0 transition-all duration-500 ${
           windowScrollY > 50
-            ? "shadow-md shadow-stone-300/20 backdrop-blur-md z-50"
+            ? "shadow-md shadow-my-lightgray/20 backdrop-blur-md z-50"
             : ""
         }`}
       >
@@ -72,7 +68,7 @@ export default function Header(props: HeaderType) {
             <img
               className="w-8"
               src={`${
-                darkMode ? "./assets/LogoDark.png" : "./assets/Logo.svg"
+                darkMode ? "./assets/Logo.svg" : "./assets/LogoDark.png"
               }`}
               alt=""
             />
@@ -82,7 +78,7 @@ export default function Header(props: HeaderType) {
             id="themeToggle"
             className="cursor-pointer w-6 h-6"
             onClick={toggleDarkMode}
-            src={`${darkMode ? "./assets/Moon.svg" : "./assets/Sun.svg"}`}
+            src={`${darkMode ? "./assets/Sun.svg" : "./assets/Moon.svg"}`}
           />
         </section>
         {windowSize > 769 ? (
@@ -90,7 +86,7 @@ export default function Header(props: HeaderType) {
         ) : (
           <div onClick={toggleSideBar}>
             <svg
-              className="w-6 h-6 text-white dark:text-black cursor-pointer"
+              className="w-6 h-6 cursor-pointer"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"

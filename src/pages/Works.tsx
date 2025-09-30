@@ -13,7 +13,7 @@ export default function WorksIndex(props: { isDark: boolean }) {
                   <div className="overflow-hidden rounded-lg dark:shadow-lg">
                     <img
                       className="hover:scale-105 hover:-rotate-1 transition-all duration-300"
-                      src={props.isDark ? item.img : item.imgDark}
+                      src={props.isDark ? item.imgDark : item.img}
                       alt={item.title}
                     />
                   </div>

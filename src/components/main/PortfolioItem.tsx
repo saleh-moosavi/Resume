@@ -40,13 +40,11 @@ export default function PortfolioItem(props: { isDark: boolean }) {
                   <a href={item.link} target="_blank">
                     <img
                       className="w-full object-cover rounded-lg"
-                      src={props.isDark ? item.img : item.imgDark}
+                      src={props.isDark ? item.imgDark : item.img}
                       alt=""
                     />
-                    <h2 className="text-white font-bold dark:text-black text-center mt-5">
-                      {item.title}
-                    </h2>
-                    <p className="text-white text-sm md:text-sm dark:text-black text-center line-clamp-1">
+                    <h2 className="font-bold text-center mt-5">{item.title}</h2>
+                    <p className="text-sm md:text-sm text-center line-clamp-1">
                       {item.desc}
                     </p>
                   </a>

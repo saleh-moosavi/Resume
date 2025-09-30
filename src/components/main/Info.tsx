@@ -17,7 +17,7 @@ export default function Info() {
     >
       <h3 className="text-lg md:text-2xl font-semibold">Hey There</h3>
       <h3 className="text-xl md:text-4xl font-semibold">I'm {info.name}</h3>
-      <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] pt-10 pb-7 font-medium drop-shadow-[0_0_7px_rgb(29_78_216)] dark:drop-shadow-[0_0_10px_#f0c0f0] bg-clip-text text-transparent bg-gradient-to-r from-[#bf2fcf] dark:from-[#3d45bd] to-[#2e75e0] dark:to-[#b94ec5] select-none">
+      <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] pt-10 pb-7 font-medium drop-shadow-[0_0_10px_#f0c0f0] dark:drop-shadow-[0_0_10px_#1d4ed8] bg-clip-text text-transparent bg-gradient-to-r from-my-darkpurple dark:from-my-darkblue to-my-lightblue dark:to-my-lightpurple select-none">
         FRONTEND
         <br />
         DEVELOPER
@@ -25,7 +25,7 @@ export default function Info() {
       <p className="w-[23.25rem] sm:w-[31rem] md:w-[41.5rem] lg:w-[52.54rem] text-xs sm:text-sm font-medium md:text-base">
         {info.desc}
       </p>
-      <div className="bg-white shadow-[0_0_15px_#fff] dark:shadow-[0_0_15px_#000] p-1 mt-10 flex items-center rounded-full cursor-pointer animate-bounce">
+      <div className="bg-my-white shadow-md shadow-my-black dark:shadow-my-white p-1 mt-10 flex items-center rounded-full cursor-pointer animate-bounce">
         <img src="./assets/Arrow-Down.svg" onClick={scrollToDown} />
       </div>
     </div>

@@ -4,9 +4,9 @@
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(
     to bottom,
-    rgb(242, 0, 255),
-    rgb(0, 0, 255),
-    rgb(242, 0, 255)
+    #f200ff,
+    #0000ff,
+    #f200ff
   );
 }
 

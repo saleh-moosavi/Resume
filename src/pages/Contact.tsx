@@ -1,19 +1,10 @@
-import { useEffect, useState } from "react";
-
-export default function ContactIndex(props: { isDark: boolean }) {
-  //define a variable to track dark/light mood
-  const [darkMood, setDarkMood] = useState<undefined | boolean>(undefined);
-
-  useEffect(() => {
-    setDarkMood(props.isDark);
-  }, [props.isDark]);
-
+export default function ContactIndex({ isDark }: { isDark: boolean }) {
   return (
     <div className="h-screen w-screen flex flex-col justify-center items-center">
       <p className="text-lg font-semibold scale-down">Scan Me</p>
       <img
         className="w-40 mb-5 mt-2 scale-down"
-        src={`./assets/contact/QrCode-${darkMood ? "black" : "white"}.svg`}
+        src={`./assets/contact/QrCode-${isDark ? "white" : "black"}.svg`}
         alt=""
       />
       <p className="text-lg font-semibold fade-in">Or</p>
@@ -24,7 +15,7 @@ export default function ContactIndex(props: { isDark: boolean }) {
             <img
               className="w-10"
               src={`./assets/contact/telegram-${
-                darkMood ? "black" : "white"
+                isDark ? "white" : "black"
               }.svg`}
             />
           </a>
@@ -35,7 +26,7 @@ export default function ContactIndex(props: { isDark: boolean }) {
             <img
               className="w-10"
               src={`./assets/contact/linkedin-${
-                darkMood ? "black" : "white"
+                isDark ? "white" : "black"
               }.svg`}
               alt=""
             />
@@ -46,9 +37,7 @@ export default function ContactIndex(props: { isDark: boolean }) {
           <a href="https://github.com/saleh-moosavi" target="_blank">
             <img
               className="w-10"
-              src={`./assets/contact/github-${
-                darkMood ? "black" : "white"
-              }.svg`}
+              src={`./assets/contact/github-${isDark ? "white" : "black"}.svg`}
               alt=""
             />
           </a>
@@ -58,7 +47,7 @@ export default function ContactIndex(props: { isDark: boolean }) {
           <a href="mailto:https://salehmoosavi77@gmail.com" target="_blank">
             <img
               className="w-10"
-              src={`./assets/contact/email-${darkMood ? "black" : "white"}.svg`}
+              src={`./assets/contact/email-${isDark ? "white" : "black"}.svg`}
               alt=""
             />
           </a>
