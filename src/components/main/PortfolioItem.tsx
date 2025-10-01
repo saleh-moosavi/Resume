@@ -1,10 +1,11 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import LazyImage from "../Image";
 import data from "../../data/portfolio.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function PortfolioItem(props: { isDark: boolean }) {
+export default function PortfolioItem({ isDark }: { isDark: boolean }) {
   return (
     <Swiper
       slidesPerView={1.1}
@@ -38,10 +39,9 @@ export default function PortfolioItem(props: { isDark: boolean }) {
               <div key={index}>
                 <SwiperSlide className="w-2/3 md:w-1/2" key={index}>
                   <a href={item.link} target="_blank">
-                    <img
-                      className="w-full object-cover rounded-lg"
-                      src={props.isDark ? item.imgDark : item.img}
-                      alt=""
+                    <LazyImage
+                      src={isDark ? item.imgDark : item.img}
+                      alt={item.title}
                     />
                     <h2 className="font-bold text-center mt-5">{item.title}</h2>
                     <p className="text-sm md:text-sm text-center line-clamp-1">
