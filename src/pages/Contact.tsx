@@ -3,9 +3,9 @@ export default function ContactIndex({ isDark }: { isDark: boolean }) {
     <div className="h-screen w-screen flex flex-col justify-center items-center">
       <p className="text-lg font-semibold scale-down">Scan Me</p>
       <img
-        className="w-40 mb-5 mt-2 scale-down"
-        src={`./assets/contact/QrCode-${isDark ? "white" : "black"}.svg`}
-        alt=""
+        className="w-52 mb-5 mt-2 scale-down"
+        src={`./assets/contact/QrCode-${isDark ? "white" : "black"}.png`}
+        alt="Qr Code"
       />
       <p className="text-lg font-semibold fade-in">Or</p>
       <ul className="flex *:mx-5 items-center mt-5 fade-in">
@@ -22,7 +22,10 @@ export default function ContactIndex({ isDark }: { isDark: boolean }) {
         </li>
         {/* linkedin */}
         <li className="hover:-translate-y-2 transition-all duration-500">
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/saleh-moosavi-1b6878197/"
+            target="_blank"
+          >
             <img
               className="w-10"
               src={`./assets/contact/linkedin-${
