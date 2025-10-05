@@ -1,4 +1,5 @@
 import data from "../data/portfolio.json";
+import LazyImage from "../components/Image";
 import { portfolioType } from "../types/dataType";
 
 export default function WorksIndex(props: { isDark: boolean }) {
@@ -10,9 +11,8 @@ export default function WorksIndex(props: { isDark: boolean }) {
             <a href={item.link} key={item.id} target="_blank">
               <div className="move-in-down h-full flex flex-col justify-between">
                 <section>
-                  <div className="overflow-hidden rounded-lg dark:shadow-lg">
-                    <img
-                      className="hover:scale-105 hover:-rotate-1 transition-all duration-300"
+                  <div className="overflow-hidden rounded-lg dark:shadow-lg *:hover:scale-105 *:hover:-rotate-1 *:transition-all *:duration-300">
+                    <LazyImage
                       src={props.isDark ? item.imgDark : item.img}
                       alt={item.title}
                     />

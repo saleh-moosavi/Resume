@@ -1,3 +1,5 @@
+import { contactIcons } from "../constants/svgIcons";
+
 export default function ContactIndex({ isDark }: { isDark: boolean }) {
   return (
     <div className="h-screen w-screen flex flex-col justify-center items-center">
@@ -8,53 +10,17 @@ export default function ContactIndex({ isDark }: { isDark: boolean }) {
         alt="Qr Code"
       />
       <p className="text-lg font-semibold fade-in">Or</p>
-      <ul className="flex *:mx-5 items-center mt-5 fade-in">
-        {/* telegram */}
-        <li className="hover:-translate-y-2 transition-all duration-500">
-          <a href="https://t.me/Smous" target="_blank">
-            <img
-              className="w-10"
-              src={`./assets/contact/telegram-${
-                isDark ? "white" : "black"
-              }.svg`}
-            />
-          </a>
-        </li>
-        {/* linkedin */}
-        <li className="hover:-translate-y-2 transition-all duration-500">
-          <a
-            href="https://www.linkedin.com/in/saleh-moosavi-1b6878197/"
-            target="_blank"
+      <ul className="flex *:mx-5 items-center mt-5 fade-in *:max-w-10">
+        {contactIcons.map((item) => (
+          <li
+            key={item.id}
+            className="hover:-translate-y-2 transition-all duration-500"
           >
-            <img
-              className="w-10"
-              src={`./assets/contact/linkedin-${
-                isDark ? "white" : "black"
-              }.svg`}
-              alt=""
-            />
-          </a>
-        </li>
-        {/* github */}
-        <li className="hover:-translate-y-2 transition-all duration-500">
-          <a href="https://github.com/saleh-moosavi" target="_blank">
-            <img
-              className="w-10"
-              src={`./assets/contact/github-${isDark ? "white" : "black"}.svg`}
-              alt=""
-            />
-          </a>
-        </li>
-        {/* email */}
-        <li className="hover:-translate-y-2 transition-all duration-500">
-          <a href="mailto:https://salehmoosavi77@gmail.com" target="_blank">
-            <img
-              className="w-10"
-              src={`./assets/contact/email-${isDark ? "white" : "black"}.svg`}
-              alt=""
-            />
-          </a>
-        </li>
+            <a href={item.url} target="_blank">
+              {item.icon}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

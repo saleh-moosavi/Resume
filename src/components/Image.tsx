@@ -25,7 +25,7 @@ export default function LazyImage({ src, alt }: { src: string; alt: string }) {
   return (
     <div
       ref={imgRef}
-      className="w-full h-full bg-gradient-to-br from-my-darkgray to-my-lightgray rounded-lg overflow-hidden min-h-32 md:min-h-52"
+      className="w-full h-full bg-gradient-to-br from-my-darkgray to-my-lightgray rounded-lg overflow-hidden min-h-32"
     >
       {isVisible && (
         <img
