@@ -1,14 +1,16 @@
 import NavBar from "./NavBar";
 import NavBarSide from "./NavBarSide";
 import { Link } from "react-router-dom";
+import { LuMenu } from "react-icons/lu";
 import { useEffect, useState } from "react";
 import { HeaderType } from "../types/dataType";
+import { IoSunny, IoMoon } from "react-icons/io5";
 
 export default function Header(props: HeaderType) {
-  const [windowScrollY, setWindowScrollY] = useState<number>(window.scrollY);
-  const [windowSize, setwindowSize] = useState<number>(window.innerWidth);
   const [darkMode, setDarkMode] = useState<boolean>(false);
-  const [isClose, setIsClose] = useState<boolean>(true);
+  const [isSidebarClose, setIsSidebarClose] = useState<boolean>(true);
+  const [windowSize, setwindowSize] = useState<number>(window.innerWidth);
+  const [windowScrollY, setWindowScrollY] = useState<number>(window.scrollY);
 
   useEffect(() => {
     //check dark or light mode from last closing of page
@@ -43,8 +45,8 @@ export default function Header(props: HeaderType) {
   };
 
   const toggleSideBar = () => {
-    setIsClose(!isClose);
-    isClose
+    setIsSidebarClose(!isSidebarClose);
+    isSidebarClose
       ? document.documentElement.classList.add("overflow-hidden")
       : document.documentElement.classList.remove("overflow-hidden");
   };
@@ -52,7 +54,7 @@ export default function Header(props: HeaderType) {
   return (
     <>
       {windowSize <= 769 && (
-        <NavBarSide isClose={isClose} handleSideBar={toggleSideBar} />
+        <NavBarSide isClose={isSidebarClose} handleSideBar={toggleSideBar} />
       )}
       <div
         //check scroll for adding shadow and blur to navbar
@@ -74,25 +76,18 @@ export default function Header(props: HeaderType) {
             />
           </Link>
           {/* Light/Dark Mode Button */}
-          <img
-            id="themeToggle"
-            className="cursor-pointer w-6 h-6"
-            onClick={toggleDarkMode}
-            src={`${darkMode ? "./assets/Sun.svg" : "./assets/Moon.svg"}`}
-          />
+          <span className="cursor-pointer *:size-7" onClick={toggleDarkMode}>
+            {darkMode ? (
+              <IoSunny className="text-yellow-300" />
+            ) : (
+              <IoMoon className="text-blue-300" />
+            )}
+          </span>
         </section>
         {windowSize > 769 ? (
           <NavBar />
         ) : (
-          <div onClick={toggleSideBar}>
-            <img
-              alt="menu icon"
-              className="w-6 h-6 cursor-pointer"
-              src={`${
-                darkMode ? "./assets/menuDark.svg" : "./assets/menuLight.svg"
-              }`}
-            />
-          </div>
+          <LuMenu className="size-7 cursor-pointer" onClick={toggleSideBar} />
         )}
       </div>
     </>
