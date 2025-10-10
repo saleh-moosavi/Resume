@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import themeContext from "./context/theme";
 import { Loading } from "./components/Loading";
 import { lazy, useState, Suspense } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -15,21 +16,28 @@ function App() {
   const [isDark, setIsDark] = useState<boolean>(false);
 
   return (
-    <BrowserRouter>
-      <Header isDark={isDark} setIsDark={setIsDark} />
-      <Suspense fallback={<Loading />}>
-        <ErrorBoundary>
-          <Routes>
-            <Route path="/" element={<Index isDark={isDark} />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact isDark={isDark} />} />
-            <Route path="/works" element={<Works isDark={isDark} />} />
-          </Routes>
-        </ErrorBoundary>
-      </Suspense>
-      <Footer />
-    </BrowserRouter>
+    <themeContext.Provider
+      value={{
+        isDark,
+        setIsDark,
+      }}
+    >
+      <BrowserRouter>
+        <Header isDark={isDark} setIsDark={setIsDark} />
+        <Suspense fallback={<Loading />}>
+          <ErrorBoundary>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/works" element={<Works />} />
+            </Routes>
+          </ErrorBoundary>
+        </Suspense>
+        <Footer />
+      </BrowserRouter>
+    </themeContext.Provider>
   );
 }
 

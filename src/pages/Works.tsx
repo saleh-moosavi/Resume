@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import data from "../data/portfolio.json";
+import themeContext from "../context/theme";
 import LazyImage from "../components/Image";
 import { portfolioType } from "../types/dataType";
 
-export default function WorksIndex(props: { isDark: boolean }) {
+export default function WorksIndex() {
+  const { isDark } = useContext(themeContext);
   return (
     <div className="w-screen min-h-screen pb-10 pt-24">
       <section className="w-full grid justify-items-center gap-5 md:gap-10 md:grid-cols-2 lg:grid-cols-3 px-5 md:px-20">
@@ -13,7 +16,7 @@ export default function WorksIndex(props: { isDark: boolean }) {
                 <section>
                   <div className="overflow-hidden rounded-lg dark:shadow-lg *:hover:scale-105 *:hover:-rotate-1 *:transition-all *:duration-300">
                     <LazyImage
-                      src={props.isDark ? item.imgDark : item.img}
+                      src={isDark ? item.imgDark : item.img}
                       alt={item.title}
                     />
                   </div>

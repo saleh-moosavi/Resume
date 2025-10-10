@@ -1,6 +1,9 @@
+import { useContext } from "react";
+import themeContext from "../context/theme";
 import { contactIcons } from "../constants/svgIcons";
 
-export default function ContactIndex({ isDark }: { isDark: boolean }) {
+export default function ContactIndex() {
+  const { isDark } = useContext(themeContext);
   return (
     <div className="h-screen w-screen flex flex-col justify-center items-center">
       <p className="text-lg font-semibold scale-down">Scan Me</p>

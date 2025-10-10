@@ -2,10 +2,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import LazyImage from "../Image";
+import { useContext } from "react";
 import data from "../../data/portfolio.json";
+import themeContext from "../../context/theme";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function PortfolioItem({ isDark }: { isDark: boolean }) {
+export default function PortfolioItem() {
+  const { isDark } = useContext(themeContext);
   return (
     <Swiper
       slidesPerView={1.1}
