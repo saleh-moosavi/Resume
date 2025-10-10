@@ -19,7 +19,7 @@
     "date": "11/1403 - 05/1404",
     "time": "Full Time",
     "description": [
-      "Developed high-performance, responsive web applications usingNext.js 15 (App Router), React , TypeScript, and Tailwind CSS,emphasizing modular architecture, type safety, and scalability.",
+      "Developed high-performance, responsive web applications using Next.js 15 (App Router), React , TypeScript, and Tailwind CSS,emphasizing modular architecture, type safety, and scalability.",
       "Managed global state efficiently using Zustand, reducing propdrilling and enabling scalable, testable state logic across complexfeature modules.",
       "Optimized SEO and core web vitals through Server-Side Rendering(SSR), Static Site Generation (SSG) and lazy loading of componentsand assets.",
       "Collaborated with backend teams to integrate RESTful APIs,ensuring contract compliance, error resilience, and efficient datafetching.",

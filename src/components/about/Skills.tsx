@@ -1,14 +1,14 @@
 import SkillBtn from "../SkillBtn";
-import skills from "../../data/skils.json";
+import { LanguagesAndTools } from "../../constants/LanguagesAndTools";
 
 export default function Skills() {
   return (
     <div className="flex flex-wrap justify-between items-center gap-5 pt-4 select-none">
-      {skills.map((skill, index: number) => (
+      {LanguagesAndTools.map((skill, index: number) => (
         <SkillBtn
           key={index}
           title={skill.title}
-          icon={skill.img}
+          icon={skill.icon}
           bgColor={skill.bgColor}
         />
       ))}

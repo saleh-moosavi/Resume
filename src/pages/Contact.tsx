@@ -16,7 +16,7 @@ export default function ContactIndex({ isDark }: { isDark: boolean }) {
             key={item.id}
             className="hover:-translate-y-2 transition-all duration-500"
           >
-            <a href={item.url} target="_blank">
+            <a href={item.url} target="_blank" className="*:size-10">
               {item.icon}
             </a>
           </li>

@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, ReactNode, SetStateAction } from "react";
 
 export interface portfolioType {
   id: number;
@@ -20,7 +20,7 @@ export interface infoType {
 
 export interface SkillBtnType {
   bgColor: string;
-  icon: string;
+  icon: ReactNode;
   title: string;
 }
 
