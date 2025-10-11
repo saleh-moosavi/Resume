@@ -4,7 +4,6 @@ import { Outlet } from "react-router-dom";
 import themeContext from "./context/theme";
 import { useState, Suspense } from "react";
 import { Loading } from "./components/Loading";
-import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
   const [isDark, setIsDark] = useState<boolean>(false);
@@ -16,11 +15,9 @@ function App() {
         setIsDark,
       }}
     >
-      <Header isDark={isDark} setIsDark={setIsDark} />
+      <Header />
       <Suspense fallback={<Loading />}>
-        <ErrorBoundary>
-          <Outlet />
-        </ErrorBoundary>
+        <Outlet />
       </Suspense>
       <Footer />
     </themeContext.Provider>

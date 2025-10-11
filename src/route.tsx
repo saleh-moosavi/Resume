@@ -7,11 +7,13 @@ const Works = lazy(() => import("./pages/Works"));
 const About = lazy(() => import("./pages/About"));
 const HomePage = lazy(() => import("./pages/Home"));
 const Contact = lazy(() => import("./pages/Contact"));
+const ErrorBoundary = lazy(() => import("./components/ErrorBoundary"));
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorBoundary />,
     children: [
       {
         index: true,

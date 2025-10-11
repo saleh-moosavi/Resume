@@ -2,12 +2,12 @@ import NavBar from "./NavBar";
 import NavBarSide from "./NavBarSide";
 import { Link } from "react-router-dom";
 import { LuMenu } from "react-icons/lu";
-import { useEffect, useState } from "react";
-import { HeaderType } from "../types/dataType";
+import themeContext from "../context/theme";
 import { IoSunny, IoMoon } from "react-icons/io5";
+import { useContext, useEffect, useState } from "react";
 
-export default function Header(props: HeaderType) {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+export default function Header() {
+  const { isDark, setIsDark } = useContext(themeContext);
   const [isSidebarClose, setIsSidebarClose] = useState<boolean>(true);
   const [windowSize, setwindowSize] = useState<number>(window.innerWidth);
   const [windowScrollY, setWindowScrollY] = useState<number>(window.scrollY);
@@ -15,11 +15,11 @@ export default function Header(props: HeaderType) {
   useEffect(() => {
     //check dark or light mode from last closing of page
     localStorage.getItem("isDark")
-      ? setDarkMode(JSON.parse(localStorage.getItem("isDark") || ""))
-      : localStorage.setItem("isDark", JSON.stringify(darkMode));
+      ? setIsDark(JSON.parse(localStorage.getItem("isDark") || ""))
+      : localStorage.setItem("isDark", JSON.stringify(isDark));
     if (JSON.parse(localStorage.getItem("isDark") || "")) {
       document.documentElement.classList.add("dark");
-      props.setIsDark(true);
+      setIsDark(true);
     }
 
     function handleScroll() {
@@ -37,10 +37,10 @@ export default function Header(props: HeaderType) {
   }, []);
 
   //change darkMode and lightMode (More in tailwind.config.js)
-  const toggleDarkMode = () => {
-    localStorage.setItem("isDark", JSON.stringify(!darkMode));
-    setDarkMode(!darkMode);
-    props.setIsDark(!darkMode);
+  const toggleisDark = () => {
+    localStorage.setItem("isDark", JSON.stringify(!isDark));
+    setIsDark(!isDark);
+    setIsDark(!isDark);
     document.documentElement.classList.toggle("dark");
   };
 
@@ -69,15 +69,13 @@ export default function Header(props: HeaderType) {
           <Link to="/">
             <img
               className="w-8"
-              src={`${
-                darkMode ? "./assets/Logo.svg" : "./assets/LogoDark.png"
-              }`}
+              src={`${isDark ? "./assets/Logo.svg" : "./assets/LogoDark.png"}`}
               alt=""
             />
           </Link>
           {/* Light/Dark Mode Button */}
-          <span className="cursor-pointer *:size-7" onClick={toggleDarkMode}>
-            {darkMode ? (
+          <span className="cursor-pointer *:size-7" onClick={toggleisDark}>
+            {isDark ? (
               <IoSunny className="text-yellow-300" />
             ) : (
               <IoMoon className="text-blue-300" />
