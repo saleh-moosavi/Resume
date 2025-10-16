@@ -2,26 +2,17 @@ import NavBar from "./NavBar";
 import NavBarSide from "./NavBarSide";
 import { Link } from "react-router-dom";
 import { LuMenu } from "react-icons/lu";
-import themeContext from "../context/theme";
+import { useEffect, useState } from "react";
 import { IoSunny, IoMoon } from "react-icons/io5";
-import { useContext, useEffect, useState } from "react";
+import useThemeLocalStorage from "../hooks/useThemeLocalStorage";
 
 export default function Header() {
-  const { isDark, setIsDark } = useContext(themeContext);
+  const { isDark, toggleisDark } = useThemeLocalStorage();
   const [isSidebarClose, setIsSidebarClose] = useState<boolean>(true);
   const [windowSize, setwindowSize] = useState<number>(window.innerWidth);
   const [windowScrollY, setWindowScrollY] = useState<number>(window.scrollY);
 
   useEffect(() => {
-    //check dark or light mode from last closing of page
-    localStorage.getItem("isDark")
-      ? setIsDark(JSON.parse(localStorage.getItem("isDark") || ""))
-      : localStorage.setItem("isDark", JSON.stringify(isDark));
-    if (JSON.parse(localStorage.getItem("isDark") || "")) {
-      document.documentElement.classList.add("dark");
-      setIsDark(true);
-    }
-
     function handleScroll() {
       setWindowScrollY(window.scrollY);
     }
@@ -35,14 +26,6 @@ export default function Header() {
       window.removeEventListener("resize", handleSize);
     };
   }, []);
-
-  //change darkMode and lightMode (More in tailwind.config.js)
-  const toggleisDark = () => {
-    localStorage.setItem("isDark", JSON.stringify(!isDark));
-    setIsDark(!isDark);
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle("dark");
-  };
 
   const toggleSideBar = () => {
     setIsSidebarClose(!isSidebarClose);
