@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PortfolioItem from "./PortfolioItem";
+import PortfolioItem from "./Slider";
 
 export default function Portfolio() {
   return (

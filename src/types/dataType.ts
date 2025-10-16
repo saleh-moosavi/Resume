@@ -8,7 +8,8 @@ export interface portfolioType {
   isFavor: boolean;
   img: string;
   imgDark: string;
-  link: string;
+  demoLink: string;
+  codeLink: string;
 }
 
 export interface infoType {

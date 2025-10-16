@@ -15,23 +15,19 @@
     "isFavor": true,
     "img": "./assets/portfolio/filimora-light.png",
     "imgDark": "./assets/portfolio/filimora-dark.png",
-    "link": "https://filimora.vercel.app/"
+    "demoLink": "https://filimora.vercel.app/",
+    "codeLink": "https://coffee-crave.vercel.app/"
   },
   {
     "id": 2,
     "title": "Foodie",
     "desc": "a visually appealing and user-friendly online food website designed to inspire and engage food enthusiasts. It features a clean and modern layout with sections for trending recipes, categorized meal options and a collection of delicious dishes.",
-    "techs": [
-      "TypeScript", 
-      "React", 
-      "Tailwind", 
-      "React_Icons", 
-      "React_Router"
-    ],
+    "techs": ["TypeScript", "React", "Tailwind", "React_Icons", "React_Router"],
     "isFavor": true,
     "img": "./assets/portfolio/foodie-light.png",
     "imgDark": "./assets/portfolio/foodie-dark.png",
-    "link": "https://online-foodie.vercel.app/"
+    "demoLink": "https://online-foodie.vercel.app/",
+    "codeLink": "https://coffee-crave.vercel.app/"
   },
   {
     "id": 3,
@@ -48,23 +44,19 @@
     "isFavor": true,
     "img": "./assets/portfolio/next-play-light.png",
     "imgDark": "./assets/portfolio/next-play-dark.png",
-    "link": "https://next-play-green.vercel.app/"
+    "demoLink": "https://next-play-green.vercel.app/",
+    "codeLink": "https://coffee-crave.vercel.app/"
   },
   {
     "id": 4,
     "title": "Incore",
     "desc": "The Incore landing page is designed using the glassmorphism style, which features a frosted glass-like effect with semi-transparent backgrounds, soft blur, and vibrant colors, giving it a modern and sleek appearance",
-    "techs": [
-      "TypeScript", 
-      "React", 
-      "Tailwind", 
-      "React_Icons", 
-      "React_Router"
-    ],
+    "techs": ["TypeScript", "React", "Tailwind", "React_Icons", "React_Router"],
     "isFavor": true,
     "img": "./assets/portfolio/incore-light.png",
     "imgDark": "./assets/portfolio/incore-dark.png",
-    "link": "https://incore.vercel.app/"
+    "demoLink": "https://incore.vercel.app/",
+    "codeLink": "https://coffee-crave.vercel.app/"
   },
   {
     "id": 5,
@@ -74,7 +66,8 @@
     "isFavor": false,
     "img": "./assets/portfolio/glow-up-light.png",
     "imgDark": "./assets/portfolio/glow-up-dark.png",
-    "link": "https://glow-up-xi.vercel.app/"
+    "demoLink": "https://glow-up-xi.vercel.app/",
+    "codeLink": "https://coffee-crave.vercel.app/"
   },
   {
     "id": 6,
@@ -84,7 +77,8 @@
     "isFavor": true,
     "img": "./assets/portfolio/zenith-light.png",
     "imgDark": "./assets/portfolio/zenith-dark.png",
-    "link": "https://co-zenith.vercel.app/"
+    "demoLink": "https://co-zenith.vercel.app/",
+    "codeLink": "https://coffee-crave.vercel.app/"
   },
   {
     "id": 7,
@@ -94,23 +88,19 @@
     "isFavor": true,
     "img": "./assets/portfolio/coffee-crave-light.png",
     "imgDark": "./assets/portfolio/coffee-crave-dark.png",
-    "link": "https://coffee-crave.vercel.app/"
+    "demoLink": "https://coffee-crave.vercel.app/",
+    "codeLink": "https://coffee-crave.vercel.app/"
   },
   {
     "id": 8,
     "title": "Forex Journal",
     "desc": "Forex Journal app is a practical tool for forex traders to track and analyze their trades effectively. It combines simplicity with powerful features, making it a valuable addition to any trader's toolkit.",
-    "techs": [
-      "TypeScript", 
-      "React", 
-      "Tailwind", 
-      "React_Icons", 
-      "React_Router"
-    ],
+    "techs": ["TypeScript", "React", "Tailwind", "React_Icons", "React_Router"],
     "isFavor": false,
     "img": "./assets/portfolio/forex-journal-light.png",
     "imgDark": "./assets/portfolio/forex-journal-dark.png",
-    "link": "https://forex-journal.vercel.app/"
+    "demoLink": "https://forex-journal.vercel.app/",
+    "codeLink": "https://coffee-crave.vercel.app/"
   },
   {
     "id": 9,
@@ -120,6 +110,7 @@
     "isFavor": false,
     "img": "./assets/portfolio/tic-tac-toe-light.png",
     "imgDark": "./assets/portfolio/tic-tac-toe-dark.png",
-    "link": "https://tic-tac-toe-plays.vercel.app/"
+    "demoLink": "https://tic-tac-toe-plays.vercel.app/",
+    "codeLink": "https://coffee-crave.vercel.app/"
   }
 ]
