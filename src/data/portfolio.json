@@ -16,7 +16,7 @@
     "img": "./assets/portfolio/filimora-light.png",
     "imgDark": "./assets/portfolio/filimora-dark.png",
     "demoLink": "https://filimora.vercel.app/",
-    "codeLink": "https://coffee-crave.vercel.app/"
+    "codeLink": "https://github.com/saleh-moosavi/Filimora"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
     "img": "./assets/portfolio/foodie-light.png",
     "imgDark": "./assets/portfolio/foodie-dark.png",
     "demoLink": "https://online-foodie.vercel.app/",
-    "codeLink": "https://coffee-crave.vercel.app/"
+    "codeLink": "https://github.com/saleh-moosavi/Foodie"
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
     "img": "./assets/portfolio/next-play-light.png",
     "imgDark": "./assets/portfolio/next-play-dark.png",
     "demoLink": "https://next-play-green.vercel.app/",
-    "codeLink": "https://coffee-crave.vercel.app/"
+    "codeLink": "https://github.com/saleh-moosavi/Next-Play"
   },
   {
     "id": 4,
@@ -56,7 +56,7 @@
     "img": "./assets/portfolio/incore-light.png",
     "imgDark": "./assets/portfolio/incore-dark.png",
     "demoLink": "https://incore.vercel.app/",
-    "codeLink": "https://coffee-crave.vercel.app/"
+    "codeLink": "https://github.com/saleh-moosavi/Incore"
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@
     "img": "./assets/portfolio/glow-up-light.png",
     "imgDark": "./assets/portfolio/glow-up-dark.png",
     "demoLink": "https://glow-up-xi.vercel.app/",
-    "codeLink": "https://coffee-crave.vercel.app/"
+    "codeLink": "https://github.com/saleh-moosavi/Glow-Up"
   },
   {
     "id": 6,
@@ -78,7 +78,7 @@
     "img": "./assets/portfolio/zenith-light.png",
     "imgDark": "./assets/portfolio/zenith-dark.png",
     "demoLink": "https://co-zenith.vercel.app/",
-    "codeLink": "https://coffee-crave.vercel.app/"
+    "codeLink": "https://github.com/saleh-moosavi/Zenith"
   },
   {
     "id": 7,
@@ -89,7 +89,7 @@
     "img": "./assets/portfolio/coffee-crave-light.png",
     "imgDark": "./assets/portfolio/coffee-crave-dark.png",
     "demoLink": "https://coffee-crave.vercel.app/",
-    "codeLink": "https://coffee-crave.vercel.app/"
+    "codeLink": "https://github.com/saleh-moosavi/Coffee-Crave"
   },
   {
     "id": 8,
@@ -100,7 +100,7 @@
     "img": "./assets/portfolio/forex-journal-light.png",
     "imgDark": "./assets/portfolio/forex-journal-dark.png",
     "demoLink": "https://forex-journal.vercel.app/",
-    "codeLink": "https://coffee-crave.vercel.app/"
+    "codeLink": "https://github.com/saleh-moosavi/Forex-Journal"
   },
   {
     "id": 9,
@@ -111,6 +111,6 @@
     "img": "./assets/portfolio/tic-tac-toe-light.png",
     "imgDark": "./assets/portfolio/tic-tac-toe-dark.png",
     "demoLink": "https://tic-tac-toe-plays.vercel.app/",
-    "codeLink": "https://coffee-crave.vercel.app/"
+    "codeLink": "https://github.com/saleh-moosavi/Tic-Tac-Toe"
   }
 ]

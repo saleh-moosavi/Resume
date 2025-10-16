@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PortfolioItem from "./Slider";
+import SliderWrapper from "./SliderWrapper";
 
 export default function Portfolio() {
   return (
@@ -10,7 +10,7 @@ export default function Portfolio() {
           <Link to="./works">View More</Link>
         </p>
       </div>
-      <PortfolioItem />
+      <SliderWrapper />
     </div>
   );
 }
