@@ -10,7 +10,9 @@ export default function Slide({ item }: { item: portfolioType }) {
     <article className="relative overflow-hidden rounded-lg group cursor-grab">
       <LazyImage src={isDark ? item.imgDark : item.img} alt={item.title} />
       <section className="translate-y-full group-hover:translate-y-0 absolute inset-0 flex flex-col justify-start items-center gap-5 bg-my-black/50 backdrop-blur-md text-my-white p-5 transition-all duration-300">
-        <h2 className="text-lg font-bold text-center select-none">{item.title}</h2>
+        <h2 className="text-lg font-bold text-center select-none">
+          {item.title}
+        </h2>
         <p className="text-sm md:text-sm text-center select-none">
           {item.desc}
         </p>
