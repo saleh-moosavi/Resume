@@ -16,7 +16,7 @@ export default function WorksIndex() {
               key={item.id}
               className="move-in-down h-full flex flex-col justify-between"
             >
-              <section>
+              <section className="mb-3">
                 <div className="relative overflow-hidden rounded-lg dark:shadow-lg group">
                   <section className="group-hover:scale-105 group-hover:-rotate-1 transition-all duration-300">
                     <LazyImage
@@ -52,7 +52,7 @@ export default function WorksIndex() {
                   <p className="text-justify text-sm pt-2">{item.desc}</p>
                 </article>
               </section>
-              <ul className="text-xs text-justify mt-2 font-semibold flex flex-wrap justify-start gap-3">
+              <ul className="text-xs text-justify mt-2 font-semibold flex flex-wrap justify-start gap-2">
                 <li>Techs : </li>
                 {item.techs.map((tech: string, index: number) => {
                   return (

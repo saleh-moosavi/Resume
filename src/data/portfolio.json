@@ -61,7 +61,7 @@
   {
     "id": 5,
     "title": "Glow Up",
-    "desc": "some text about this work",
+    "desc": "An elegant landing page for a beauty brand, featuring soft colors, smooth animations, and a clean layout. Designed to showcase products beautifully while ensuring a seamless and responsive user experience.",
     "techs": [""],
     "isFavor": false,
     "img": "./assets/portfolio/glow-up-light.png",
@@ -72,7 +72,7 @@
   {
     "id": 6,
     "title": "Zenith",
-    "desc": "some text about this work",
+    "desc": "Zenith is A clean and minimal landing page showcasing modern business solutions. Designed with a subtle animations to highlight services and build trust through simplicity and clarity.",
     "techs": [""],
     "isFavor": true,
     "img": "./assets/portfolio/zenith-light.png",
@@ -83,7 +83,7 @@
   {
     "id": 7,
     "title": "Coffee Crave",
-    "desc": "some text about this work",
+    "desc": "A stylish and classic home page for a coffee brand, combining warm tones and elegant typography. Focused on creating a cozy, inviting atmosphere that highlights products and brand story.",
     "techs": [""],
     "isFavor": true,
     "img": "./assets/portfolio/coffee-crave-light.png",
@@ -94,7 +94,7 @@
   {
     "id": 8,
     "title": "Forex Journal",
-    "desc": "Forex Journal app is a practical tool for forex traders to track and analyze their trades effectively. It combines simplicity with powerful features, making it a valuable addition to any trader's toolkit.",
+    "desc": "Forex Journal is A practical and intuitive tool built for forex traders to log and review their trades effectively. The app helping users improve their trading strategies and track performance through insightful data visualization and clean design.",
     "techs": ["TypeScript", "React", "Tailwind", "React_Icons", "React_Router"],
     "isFavor": false,
     "img": "./assets/portfolio/forex-journal-light.png",
@@ -105,7 +105,7 @@
   {
     "id": 9,
     "title": "Tic Tac Toe",
-    "desc": "some text about this work",
+    "desc": "simple and interactive Tic Tac Toe game built with React-Js. Features smooth gameplay, and instant win detection — a fun demonstration of logic and front-end functionality.",
     "techs": [""],
     "isFavor": false,
     "img": "./assets/portfolio/tic-tac-toe-light.png",
