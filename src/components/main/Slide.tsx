@@ -1,3 +1,4 @@
+import Badge from "../Badge";
 import LazyImage from "../Image";
 import { useContext } from "react";
 import LinkButton from "../LinkButton";
@@ -17,14 +18,11 @@ export default function Slide({ item }: { item: portfolioType }) {
         <p className="text-sm md:text-sm text-center select-none">
           {item.desc}
         </p>
-        <ul className="flex gap-2 items-center *:inline-block mt-5">
+        <ul className="flex flex-wrap gap-2 items-center *:inline-block mt-5">
           <li className="font-semibold">Techs : </li>
           {item.techs.map((tech: string, index: number) => (
-            <li
-              key={index}
-              className="bg-my-lightgray text-my-black text-xs font-semibold px-2 py-1 rounded-lg select-none"
-            >
-              {tech}
+            <li key={index}>
+              <Badge>{tech}</Badge>
             </li>
           ))}
         </ul>

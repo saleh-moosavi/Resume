@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import Badge from "../components/Badge";
 import data from "../data/portfolio.json";
 import themeContext from "../context/theme";
 import LazyImage from "../components/Image";
@@ -55,11 +56,8 @@ export default function WorksIndex() {
                 <li>Techs : </li>
                 {item.techs.map((tech: string, index: number) => {
                   return (
-                    <li
-                      key={index}
-                      className="dark:bg-my-lightgray bg-my-darkgray text-my-white dark:text-my-black text-xs font-semibold px-2 py-1 rounded-lg select-none"
-                    >
-                      {tech}
+                    <li key={index}>
+                      <Badge>{tech}</Badge>
                     </li>
                   );
                 })}
