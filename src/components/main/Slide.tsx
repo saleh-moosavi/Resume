@@ -1,5 +1,6 @@
 import LazyImage from "../Image";
 import { useContext } from "react";
+import LinkButton from "../LinkButton";
 import themeContext from "../../context/theme";
 import { portfolioType } from "../../types/dataType";
 import { LuScreenShare, LuCodeXml } from "react-icons/lu";
@@ -29,23 +30,21 @@ export default function Slide({ item }: { item: portfolioType }) {
         </ul>
         <div className="flex items-center gap-5 mt-auto ">
           {item.demoLink && (
-            <a
-              href={item.demoLink}
-              target="_blank"
-              className="flex items-center gap-2 bg-my-darkpurple hover:bg-my-lightpurple p-2 rounded-lg"
+            <LinkButton
+              link={item.demoLink}
+              classes="bg-my-darkpurple hover:bg-my-lightpurple"
+              icon={<LuScreenShare />}
             >
-              <LuScreenShare className="size-5" />
               Live Demo
-            </a>
+            </LinkButton>
           )}
-          <a
-            href={item.codeLink}
-            target="_blank"
-            className="flex items-center gap-2 bg-my-darkblue hover:bg-my-lightblue p-2 rounded-lg"
+          <LinkButton
+            link={item.codeLink}
+            classes="bg-my-darkblue hover:bg-my-lightblue"
+            icon={<LuCodeXml />}
           >
-            <LuCodeXml className="size-5" />
             Source Code
-          </a>
+          </LinkButton>
         </div>
       </section>
     </article>

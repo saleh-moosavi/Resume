@@ -2,6 +2,7 @@ import { useContext } from "react";
 import data from "../data/portfolio.json";
 import themeContext from "../context/theme";
 import LazyImage from "../components/Image";
+import LinkButton from "../components/LinkButton";
 import { portfolioType } from "../types/dataType";
 import { LuCodeXml, LuScreenShare } from "react-icons/lu";
 
@@ -26,23 +27,21 @@ export default function WorksIndex() {
                   </section>
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-5 mt-auto bg-my-black/50 backdrop-blur-sm text-my-white p-5 transition-all duration-300">
                     {item.demoLink && (
-                      <a
-                        href={item.demoLink}
-                        target="_blank"
-                        className="flex items-center gap-2 bg-my-darkpurple hover:bg-my-lightpurple p-2 rounded-lg"
+                      <LinkButton
+                        link={item.demoLink}
+                        classes="bg-my-darkpurple hover:bg-my-lightpurple"
+                        icon={<LuScreenShare />}
                       >
-                        <LuScreenShare className="size-5" />
                         Live Demo
-                      </a>
+                      </LinkButton>
                     )}
-                    <a
-                      href={item.codeLink}
-                      target="_blank"
-                      className="flex items-center gap-2 bg-my-darkblue hover:bg-my-lightblue p-2 rounded-lg"
+                    <LinkButton
+                      link={item.codeLink}
+                      classes="bg-my-darkblue hover:bg-my-lightblue"
+                      icon={<LuCodeXml />}
                     >
-                      <LuCodeXml className="size-5" />
                       Source Code
-                    </a>
+                    </LinkButton>
                   </div>
                 </div>
                 <article>
