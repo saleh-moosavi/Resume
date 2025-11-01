@@ -1,6 +1,30 @@
 [
   {
     "id": 1,
+    "title": "Musiland",
+    "desc": "a comprehensive platform designed for movie enthusiasts! Whether you're looking for the latest releases or classic films and movies, we have it all.",
+    "techs": [
+      "React",
+      "Tailwind",
+      "Axios",
+      "Zustand",
+      "Lucide_React",
+      "Swipper",
+      "React_Hook_Form",
+      "Zod",
+      "TypeScript",
+      "Bcrypt",
+      "Node.Js",
+      "Express",
+      "MongoDB"
+    ],
+    "isFavor": true,
+    "img": "./assets/portfolio/musiland-dark.png",
+    "imgDark": "./assets/portfolio/musiland-light.png",
+    "codeLink": "https://github.com/saleh-moosavi/Musiland"
+  },
+  {
+    "id": 1,
     "title": "Filimora",
     "desc": "a comprehensive platform designed for movie enthusiasts! Whether you're looking for the latest releases or classic films and movies, we have it all.",
     "techs": [
@@ -13,8 +37,7 @@
       "Redux_Toolkit"
     ],
     "isFavor": true,
-    "img": "./assets/portfolio/filimora-light.png",
-    "imgDark": "./assets/portfolio/filimora-dark.png",
+    "img": "./assets/portfolio/filimora.png",
     "demoLink": "https://filimora.vercel.app/",
     "codeLink": "https://github.com/saleh-moosavi/Filimora"
   },
@@ -24,8 +47,7 @@
     "desc": "a visually appealing and user-friendly online food website designed to inspire and engage food enthusiasts. It features a clean and modern layout with sections for trending recipes, categorized meal options and a collection of delicious dishes.",
     "techs": ["TypeScript", "React", "Tailwind", "React_Icons"],
     "isFavor": true,
-    "img": "./assets/portfolio/foodie-light.png",
-    "imgDark": "./assets/portfolio/foodie-dark.png",
+    "img": "./assets/portfolio/foodie.png",
     "demoLink": "https://online-foodie.vercel.app/",
     "codeLink": "https://github.com/saleh-moosavi/Foodie"
   },
@@ -42,8 +64,8 @@
       "React_Router"
     ],
     "isFavor": true,
-    "img": "./assets/portfolio/next-play-light.png",
-    "imgDark": "./assets/portfolio/next-play-dark.png",
+    "img": "./assets/portfolio/next-play-dark.png",
+    "imgDark": "./assets/portfolio/next-play-light.png",
     "demoLink": "https://next-play-green.vercel.app/",
     "codeLink": "https://github.com/saleh-moosavi/Next-Play"
   },
@@ -52,31 +74,28 @@
     "title": "Incore",
     "desc": "The Incore landing page is designed using the glassmorphism style, which features a frosted glass-like effect with semi-transparent backgrounds, soft blur, and vibrant colors, giving it a modern and sleek appearance",
     "techs": ["TypeScript", "React", "Tailwind", "React_Icons"],
-    "isFavor": true,
-    "img": "./assets/portfolio/incore-light.png",
-    "imgDark": "./assets/portfolio/incore-dark.png",
+    "isFavor": false,
+    "img": "./assets/portfolio/incore.png",
     "demoLink": "https://incore.vercel.app/",
     "codeLink": "https://github.com/saleh-moosavi/Incore"
   },
   {
     "id": 5,
-    "title": "Glow Up",
-    "desc": "An elegant landing page for a beauty brand, featuring soft colors, smooth animations, and a clean layout. Designed to showcase products beautifully while ensuring a seamless and responsive user experience.",
-    "techs": ["React", "Swiper", "Tailwind", "TypeScript", "React_Icons"],
-    "isFavor": false,
-    "img": "./assets/portfolio/glow-up-light.png",
-    "imgDark": "./assets/portfolio/glow-up-dark.png",
-    "demoLink": "https://glow-up-xi.vercel.app/",
-    "codeLink": "https://github.com/saleh-moosavi/Glow-Up"
+    "title": "Forex Journal",
+    "desc": "Forex Journal is A practical and intuitive tool built for forex traders to log and review their trades effectively. The app helping users improve their trading strategies and track performance through insightful data visualization and clean design.",
+    "techs": ["TypeScript", "React", "Tailwind", "React_Icons", "React_Router"],
+    "isFavor": true,
+    "img": "./assets/portfolio/forex-journal.png",
+    "demoLink": "https://forex-journal.vercel.app/",
+    "codeLink": "https://github.com/saleh-moosavi/Forex-Journal"
   },
   {
     "id": 6,
     "title": "Zenith",
     "desc": "Zenith is A clean and minimal landing page showcasing modern business solutions. Designed with a subtle animations to highlight services and build trust through simplicity and clarity.",
     "techs": ["React", "Tailwind", "TypeScript", "React_Icons"],
-    "isFavor": true,
-    "img": "./assets/portfolio/zenith-light.png",
-    "imgDark": "./assets/portfolio/zenith-dark.png",
+    "isFavor": false,
+    "img": "./assets/portfolio/zenith.png",
     "demoLink": "https://co-zenith.vercel.app/",
     "codeLink": "https://github.com/saleh-moosavi/Zenith"
   },
@@ -85,22 +104,20 @@
     "title": "Coffee Crave",
     "desc": "A stylish and classic home page for a coffee brand, combining warm tones and elegant typography. Focused on creating a cozy, inviting atmosphere that highlights products and brand story.",
     "techs": ["TypeScript", "React", "Tailwind", "React_Icons"],
-    "isFavor": true,
-    "img": "./assets/portfolio/coffee-crave-light.png",
-    "imgDark": "./assets/portfolio/coffee-crave-dark.png",
+    "isFavor": false,
+    "img": "./assets/portfolio/coffee-crave.png",
     "demoLink": "https://coffee-crave.vercel.app/",
     "codeLink": "https://github.com/saleh-moosavi/Coffee-Crave"
   },
   {
     "id": 8,
-    "title": "Forex Journal",
-    "desc": "Forex Journal is A practical and intuitive tool built for forex traders to log and review their trades effectively. The app helping users improve their trading strategies and track performance through insightful data visualization and clean design.",
-    "techs": ["TypeScript", "React", "Tailwind", "React_Icons", "React_Router"],
+    "title": "Glow Up",
+    "desc": "An elegant landing page for a beauty brand, featuring soft colors, smooth animations, and a clean layout. Designed to showcase products beautifully while ensuring a seamless and responsive user experience.",
+    "techs": ["React", "Swiper", "Tailwind", "TypeScript", "React_Icons"],
     "isFavor": false,
-    "img": "./assets/portfolio/forex-journal-light.png",
-    "imgDark": "./assets/portfolio/forex-journal-dark.png",
-    "demoLink": "https://forex-journal.vercel.app/",
-    "codeLink": "https://github.com/saleh-moosavi/Forex-Journal"
+    "img": "./assets/portfolio/glow-up.png",
+    "demoLink": "https://glow-up-xi.vercel.app/",
+    "codeLink": "https://github.com/saleh-moosavi/Glow-Up"
   },
   {
     "id": 9,
@@ -108,9 +125,18 @@
     "desc": "simple and interactive Tic Tac Toe game built with React-Js. Features smooth gameplay, and instant win detection — a fun demonstration of logic and front-end functionality.",
     "techs": ["TypeScript", "React", "Tailwind"],
     "isFavor": false,
-    "img": "./assets/portfolio/tic-tac-toe-light.png",
-    "imgDark": "./assets/portfolio/tic-tac-toe-dark.png",
+    "img": "./assets/portfolio/tic-tac-toe.png",
     "demoLink": "https://tic-tac-toe-plays.vercel.app/",
     "codeLink": "https://github.com/saleh-moosavi/Tic-Tac-Toe"
+  },
+  {
+    "id": 9,
+    "title": "Weather Wise",
+    "desc": "simple and interactive Tic Tac Toe game built with React-Js. Features smooth gameplay, and instant win detection — a fun demonstration of logic and front-end functionality.",
+    "techs": ["HTML", "CSS", "JavaScript"],
+    "isFavor": false,
+    "img": "./assets/portfolio/weather-wise.png",
+    "demoLink": "https://weather-wise-silk.vercel.app/",
+    "codeLink": "https://github.com/saleh-moosavi/Weather-Wise"
   }
 ]

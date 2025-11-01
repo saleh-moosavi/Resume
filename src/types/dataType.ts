@@ -7,7 +7,7 @@ export interface portfolioType {
   techs: string[];
   isFavor: boolean;
   img: string;
-  imgDark: string;
+  imgDark?: string;
   demoLink?: string;
   codeLink: string;
 }

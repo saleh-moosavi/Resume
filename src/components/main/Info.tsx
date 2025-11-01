@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import data from "../../data/info.json";
 import { infoType } from "../../types/dataType";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Info() {
   const info: infoType = data[0];
@@ -26,7 +27,10 @@ export default function Info() {
         {info.desc}
       </p>
       <div className="bg-my-white shadow-md shadow-my-black dark:shadow-my-white p-1 mt-10 flex items-center rounded-full cursor-pointer animate-bounce">
-        <img src="./assets/Arrow-Down.svg" onClick={scrollToDown} />
+        <IoIosArrowDown
+          className="text-my-black size-5"
+          onClick={scrollToDown}
+        />
       </div>
     </div>
   );

@@ -22,7 +22,13 @@ export default function WorksIndex() {
                 <div className="relative overflow-hidden rounded-lg dark:shadow-lg group">
                   <section className="group-hover:scale-105 group-hover:-rotate-1 transition-all duration-300">
                     <LazyImage
-                      src={isDark ? item.imgDark : item.img}
+                      src={
+                        item.imgDark
+                          ? isDark
+                            ? item.imgDark
+                            : item.img
+                          : item.img
+                      }
                       alt={item.title}
                     />
                   </section>
