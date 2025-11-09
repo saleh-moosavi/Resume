@@ -1,13 +1,9 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(
-    to bottom,
-    #f200ff,
-    #0000ff,
-    #f200ff
-  );
+  background-image: linear-gradient(to bottom, #f200ff, #0000ff, #f200ff);
 }
 
 ::-webkit-scrollbar-track {
@@ -28,9 +24,11 @@
   0% {
     scale: 0%;
   }
+
   50% {
     scale: 110%;
   }
+
   100% {
     scale: 100%;
   }
@@ -46,6 +44,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -53,18 +52,19 @@
 
 .move-in-down {
   animation-name: move-in-right;
-  animation-duration: 0.1s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-timeline: view(block 110% 0%);
 }
 
 @keyframes move-in-right {
   0% {
-    transform: translateY(100%) scale(0%);
+    transform: translateY(10%);
     opacity: 0;
   }
+
   100% {
-    transform: translateY(0%) scale(100%);
+    transform: translateY(0%);
     opacity: 1;
   }
 }
