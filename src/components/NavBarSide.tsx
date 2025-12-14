@@ -1,6 +1,7 @@
+import { BiX } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { NavBarSideType } from "../types/dataType";
-import { BiX } from "react-icons/bi";
+import { navLivks } from "../constants/navBarLinks";
 
 export default function NavBarSide({ isClose, handleSideBar }: NavBarSideType) {
   return (
@@ -19,38 +20,20 @@ export default function NavBarSide({ isClose, handleSideBar }: NavBarSideType) {
         <li onClick={handleSideBar}>
           <BiX className="size-8 text-orange-500 hover:rotate-180 hover:text-rose-600 dark:hover:text-rose-600 transition-all duration-300" />
         </li>
-        <li className="mt-5" onClick={handleSideBar}>
-          <Link
-            className="text-my-black hover:opacity-50 dark:text-my-white transition-all duration-300"
-            to="works"
+        {navLivks.map((item, index) => (
+          <li
+            key={index + item.href}
+            onClick={handleSideBar}
+            className={`${index == 0 ? "mt-5" : ""}`}
           >
-            WORKS
-          </Link>
-        </li>
-        <li onClick={handleSideBar}>
-          <Link
-            className="text-my-black hover:opacity-50 dark:text-my-white transition-all duration-300"
-            to="blog"
-          >
-            BLOG
-          </Link>
-        </li>
-        <li onClick={handleSideBar}>
-          <Link
-            className="text-my-black hover:opacity-50 dark:text-my-white transition-all duration-300"
-            to="about"
-          >
-            ABOUT
-          </Link>
-        </li>
-        <li onClick={handleSideBar}>
-          <Link
-            className="text-my-black hover:opacity-50 dark:text-my-white transition-all duration-300"
-            to="contact"
-          >
-            CONTACT
-          </Link>
-        </li>
+            <Link
+              className="text-my-black hover:opacity-50 dark:text-my-white transition-all duration-300"
+              to={item.href}
+            >
+              {item.title}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

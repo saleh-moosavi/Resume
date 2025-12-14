@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "title": "Musiland",
     "desc": "a comprehensive platform designed for movie enthusiasts! Whether you're looking for the latest releases or classic films and movies, we have it all.",
     "techs": [
@@ -130,7 +130,7 @@
     "codeLink": "https://github.com/saleh-moosavi/Tic-Tac-Toe"
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "Weather Wise",
     "desc": "simple and interactive Tic Tac Toe game built with React-Js. Features smooth gameplay, and instant win detection — a fun demonstration of logic and front-end functionality.",
     "techs": ["HTML", "CSS", "JavaScript"],
