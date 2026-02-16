@@ -1,0 +1,129 @@
+{
+  "info": {
+    "name": "Seyed Saleh Moosavi",
+    "job_title": "Front End Developer ( React )",
+    "profile": "Front-End Developer skilled in React and JavaScript, with 2 years of hands-on experience in building responsive and high-performance web applications. Eager to contribute to an innovative team and take on new technical challenges.",
+    "desc": "I’m a front-end web developer with a passion for building dynamic, responsive, and user-friendly websites using modern technologies like React. I enjoy tackling complex problems and continuously improving my skills by staying up-to-date with the latest web development trends."
+  },
+  "skills": [
+    "HTML",
+    "CSS",
+    "Sass",
+    "Bootstrap",
+    "Tailwind",
+    "JavaScript (ES6+)",
+    "Typescript",
+    "React.Js",
+    "Next.Js",
+    "Zustand",
+    "Redux",
+    "React Router",
+    "Axios",
+    "React Query",
+    "React Hook Form",
+    "Zod",
+    "Git",
+    "GitHub",
+    "Rest APIs",
+    "Node.Js",
+    "Express.Js",
+    "Figma"
+  ],
+  "soft_skills": [
+    "Attention to Detail",
+    "Adaptability & Problem-Solving",
+    "Effective Time Management & Prioritization",
+    "Continuous Learner with Technical Curiosity",
+    "Collaboration & Team Coordination"
+  ],
+  "jobs": [
+    {
+      "title": "Front End Developer",
+      "company": "Rastaar",
+      "date": "11/2025 - 02/2026",
+      "time": "Project Oriented",
+      "type": "Remote",
+      "description": [
+        "Developed modular admin panel following atomic design methodology, building reusable components from atoms to full page templates",
+        "Managed server state with Axios and React Query for efficient fetching, caching, and background updates",
+        "Built type-safe forms using React Hook Form with Zod validation to improve reliability",
+        "Created and maintained internal NPM package of shared components with token-based authentication",
+        "Enforced TypeScript across the codebase for strict typing, reduced runtime errors, and better maintainability"
+      ]
+    },
+
+    {
+      "title": "Front End Developer",
+      "company": "Atlas Land",
+      "date": "01/2025 - 10/2025",
+      "time": "Full Time",
+      "type": "Hybrid",
+      "description": [
+        "Developed fast and optimized AI agent with Next.js 15, TypeScript, and Tailwind CSS using modular, scalable architecture",
+        "Managed state with Zustand and optimized performance/SEO via SSR, SSG, and lazy loading to improve Core Web Vitals",
+        "Integrated RESTful APIs with robust error handling",
+        "Translated Figma designs into reusable and responsive components"
+      ]
+    },
+    {
+      "title": "Front End Developer",
+      "company": "Almas Niro",
+      "date": "10/2023 - 12/2024",
+      "time": "Full Time",
+      "type": "On Site",
+      "description": [
+        "Developed simple internal CRM (attendance, inventory, procurement, work logs, issue tracking) using HTML, CSS, Bootstrap, JavaScript and JQuery",
+        "Collaborated with back-end developers on REST API integration",
+        "Handled ongoing maintenance, bug fixes, and system improvements"
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "field": "Business Management",
+      "level": "Master",
+      "duration": "09/2023 - Until Now",
+      "university": "Payam Noor University"
+    },
+    {
+      "field": "Computer Engineering",
+      "level": "Bachelor",
+      "duration": "09/2018 - 08/2023",
+      "university": "Ayatollah Borojerdi University"
+    }
+  ],
+  "languages": [{ "name": "English", "level": "Fluent" }],
+  "details": [
+    { "title": "Address", "description": "Tehran" },
+    { "title": "Phone", "description": "09938259989" },
+    { "title": "Email", "description": "salehmoosavi77@gmail.com" },
+    { "title": "Military Status", "description": "Educational Exemption" }
+  ],
+  "links": [
+    { "title": "Github", "url": "https://github.com/saleh-moosavi" },
+    {
+      "title": "Linkedin",
+      "url": "https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEKyGskbYCjYgAAAZxim5eQ8e2EKn-UoNtgzCvtLEcBPmKXkVIUH_w8tnHqws_If1B3UkkkLjG4eayWDttztbTLs3SzdOLew5OpK_VAL2_U6XN7MkbDAeT2L0iraECWv3fSrv4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsaleh-moosavi-1b6878197%2F"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Pesonal Website",
+      "code_link": "https://github.com/saleh-moosavi/Resume",
+      "demo_link": "https://saleh-moosavi.vercel.app/",
+      "description": "Developed a responsive personal portfolio using React, TypeScript, and Vite, featuring a dark/light mode toggle via the Context API for global state. Implemented react-router-dom for navigation, Tailwind for styling, and Swiper for dynamic sliders. Optimized with React Suspense and lazy loading."
+    },
+    {
+      "name": "Forex Journal",
+      "code_link": "https://github.com/saleh-moosavi/Forex-Journal",
+      "demo_link": "https://forex-journal.vercel.app/",
+      "description": "Developed a forex trading journal web app using React, TypeScript, and Tailwind CSS, designed for traders to log, review, and analyze their trades. Implemented Recharts for insightful data visualization, react-router-dom for seamless navigation, and react-icons for a clean, intuitive interface that enhances user experience and performance tracking."
+    },
+    {
+      "name": "Pesonal Website",
+      "code_link": "https://github.com/saleh-moosavi/Musiland",
+      "demo_link": "",
+      "description": "Built a full-stack music streaming and content management platform with Next.js, TypeScript, and Tailwind on the frontend, using Zustand, Axios, and Zod for state and form handling. The Node.js, Express, and MongoDB backend enables secure authentication and an admin dashboard within a modular RESTful architecture."
+    }
+  ]
+}
