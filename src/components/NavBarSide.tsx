@@ -1,7 +1,7 @@
 import { BiX } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { navLivks } from "../constants";
 import { NavBarSideType } from "../types/dataType";
-import { navLivks } from "../constants/navBarLinks";
 
 export default function NavBarSide({ isClose, handleSideBar }: NavBarSideType) {
   return (

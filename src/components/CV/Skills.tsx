@@ -1,13 +1,14 @@
 import Title from "./Title";
+import { mySkills } from "../../constants";
 
-export default function Skills({ skills }: { skills: string[] }) {
+export default function Skills() {
   return (
     <section>
       <Title text="Skills" />
       <div className="flex flex-col gap-5">
-        {skills.map((skill, index) => (
+        {mySkills.map((skill, index) => (
           <p key={index} className="font-semibold text-black text-sm">
-            {skill}
+            {skill.title}
           </p>
         ))}
       </div>

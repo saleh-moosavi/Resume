@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import Badge from "../components/Badge";
-import data from "../data/portfolio.json";
+import { portfolio } from "../constants";
 import themeContext from "../context/theme";
 import LazyImage from "../components/Image";
 import LinkButton from "../components/LinkButton";
-import { portfolioType } from "../types/dataType";
 import { LuCodeXml, LuScreenShare } from "react-icons/lu";
 
 export default function WorksIndex() {
@@ -12,7 +11,7 @@ export default function WorksIndex() {
   return (
     <div className="w-screen min-h-screen pb-10 pt-24">
       <section className="w-full grid justify-items-center gap-5 md:gap-10 md:grid-cols-2 lg:grid-cols-3 px-5 md:px-20">
-        {data.map((item: portfolioType) => {
+        {portfolio.map((item) => {
           return (
             <div
               key={item.id}

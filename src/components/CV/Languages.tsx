@@ -1,16 +1,12 @@
 import Title from "./Title";
+import { myLanguages } from "../../constants";
 
-interface ILanguage {
-  name: string;
-  level: string;
-}
-
-export default function Languages({ languages }: { languages: ILanguage[] }) {
+export default function Languages() {
   return (
     <section>
       <Title text="Languages" />
       <div className="space-y-2">
-        {languages.map((language, index) => (
+        {myLanguages.map((language, index) => (
           <div key={index} className="flex justify-between">
             <span className="text-sm text-black font-semibold">
               {language.name}

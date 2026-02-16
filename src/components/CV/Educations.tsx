@@ -1,22 +1,12 @@
 import Title from "./Title";
+import { myEducations } from "../../constants";
 
-interface IEducation {
-  field: string;
-  level: string;
-  duration: string;
-  university: string;
-}
-
-export default function Educations({
-  educations,
-}: {
-  educations: IEducation[];
-}) {
+export default function Educations() {
   return (
     <section>
       <Title text="Educations" />
       <article className="space-y-5">
-        {educations.map((edu, index) => (
+        {myEducations.map((edu, index) => (
           <div key={index}>
             <div className="flex justify-between items-center">
               <h3 className="font-semibold text-gray-900">

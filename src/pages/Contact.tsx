@@ -1,6 +1,6 @@
 import { useContext } from "react";
+import { myLinks } from "../constants";
 import themeContext from "../context/theme";
-import { contactIcons } from "../constants/svgIcons";
 
 export default function ContactIndex() {
   const { isDark } = useContext(themeContext);
@@ -14,9 +14,9 @@ export default function ContactIndex() {
       />
       <p className="text-lg font-semibold fade-in">Or</p>
       <ul className="flex *:mx-5 items-center mt-5 fade-in *:max-w-10">
-        {contactIcons.map((item) => (
+        {myLinks.map((item, index) => (
           <li
-            key={item.id}
+            key={"contact" + index}
             className="hover:-translate-y-2 transition-all duration-500"
           >
             <a href={item.url} target="_blank" className="*:size-10">

@@ -1,19 +1,13 @@
 import Title from "./Title";
 import { Link } from "react-router-dom";
+import { myProjects } from "../../constants";
 
-interface IProject {
-  name: string;
-  code_link?: string;
-  demo_link?: string;
-  description: string;
-}
-
-export default function Projects({ projects }: { projects: IProject[] }) {
+export default function Projects() {
   return (
     <section>
       <Title text="Projects" />
       <div className="grid grid-cols-1 gap-4">
-        {projects.map((project, index) => (
+        {myProjects.map((project, index) => (
           <div
             key={index}
             className="border border-gray-300 shadow rounded-lg p-3 space-y-2"

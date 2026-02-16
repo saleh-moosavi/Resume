@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { navLivks } from "../constants/navBarLinks";
+import { navLivks } from "../constants";
 
 export default function NavBar() {
   return (

@@ -1,20 +1,12 @@
 import Title from "./Title";
+import { myJobs } from "../../constants";
 
-interface IJob {
-  title: string;
-  company: string;
-  date: string;
-  time: string;
-  type: string;
-  description: string[];
-}
-
-export default function Jobs({ jobs }: { jobs: IJob[] }) {
+export default function Jobs() {
   return (
     <section>
       <Title text="Work Experience" />
       <div className="space-y-5">
-        {jobs.map((job, index) => (
+        {myJobs.map((job, index) => (
           <div
             key={"job" + index}
             className="border-gray-300 shadow border p-3 rounded-lg"

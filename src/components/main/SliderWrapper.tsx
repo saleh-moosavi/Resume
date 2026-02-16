@@ -2,9 +2,8 @@ import "swiper/css";
 import Slide from "./Slide";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import data from "../../data/portfolio.json";
+import { portfolio } from "../../constants";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { portfolioType } from "../../types/dataType";
 
 export default function SliderWrapper() {
   return (
@@ -22,7 +21,7 @@ export default function SliderWrapper() {
       }}
       className="mySwiper"
     >
-      {data.map((item: portfolioType, index: number) => {
+      {portfolio.map((item, index: number) => {
         if (item.isFavor) {
           return (
             <div key={index}>
