@@ -35,7 +35,7 @@ export default function AboutIndex() {
 
   return (
     <>
-      <article className="fixed bottom-5 right-5 space-y-2 grid">
+      <article className="fixed bottom-5 right-5 space-y-2 grid z-50">
         {isCV && (
           <button
             onClick={handlePrint}
@@ -54,7 +54,7 @@ export default function AboutIndex() {
       {isCV ? (
         <div
           ref={cvRef}
-          className="max-w-4xl mx-auto bg-stone-200 rounded-lg my-20 p-10"
+          className="max-w-4xl bg-stone-200 rounded-lg my-20 p-10 mx-10 md:mx-auto"
         >
           <CV />
         </div>

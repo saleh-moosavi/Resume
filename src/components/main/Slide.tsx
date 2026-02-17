@@ -3,7 +3,7 @@ import LazyImage from "../Image";
 import { useContext } from "react";
 import LinkButton from "../LinkButton";
 import themeContext from "../../context/theme";
-import { portfolioType } from "../../types/dataType";
+import { portfolioType } from "../../dataType";
 import { LuScreenShare, LuCodeXml } from "react-icons/lu";
 
 export default function Slide({ item }: { item: portfolioType }) {

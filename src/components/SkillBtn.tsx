@@ -1,4 +1,4 @@
-import { SkillBtnType } from "../types/dataType";
+import { SkillBtnType } from "../dataType";
 
 export default function SkillBtn({ bgColor, icon, title }: SkillBtnType) {
   return (
