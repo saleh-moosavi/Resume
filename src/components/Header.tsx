@@ -29,9 +29,11 @@ export default function Header() {
 
   const toggleSideBar = () => {
     setIsSidebarClose(!isSidebarClose);
-    isSidebarClose
-      ? document.documentElement.classList.add("overflow-hidden")
-      : document.documentElement.classList.remove("overflow-hidden");
+    if (isSidebarClose) {
+      document.documentElement.classList.add("overflow-hidden");
+    } else {
+      document.documentElement.classList.remove("overflow-hidden");
+    }
   };
 
   return (
