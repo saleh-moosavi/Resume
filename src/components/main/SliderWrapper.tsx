@@ -1,37 +1,30 @@
-import "swiper/css";
 import Slide from "./Slide";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "keen-slider/keen-slider.min.css";
 import { portfolio } from "../../constants";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useKeenSlider } from "keen-slider/react";
 
 export default function SliderWrapper() {
+  const favoriteItems = portfolio.filter((item) => item.isFavor);
+
+  const [sliderRef] = useKeenSlider({
+    breakpoints: {
+      "(min-width: 1080px)": {
+        slides: { perView: 2.1, spacing: 10 },
+      },
+    },
+    slides: {
+      perView: 1.1,
+      spacing: 10,
+    },
+  });
+
   return (
-    <Swiper
-      slidesPerView={1.1}
-      spaceBetween={10}
-      pagination={{
-        clickable: true,
-        dynamicBullets: true,
-      }}
-      breakpoints={{
-        1080: {
-          slidesPerView: 2.1,
-        },
-      }}
-      className="mySwiper"
-    >
-      {portfolio.map((item, index: number) => {
-        if (item.isFavor) {
-          return (
-            <div key={index}>
-              <SwiperSlide className="w-2/3 md:w-1/2" key={index}>
-                <Slide item={item} />
-              </SwiperSlide>
-            </div>
-          );
-        }
-      })}
-    </Swiper>
+    <div ref={sliderRef} className="keen-slider">
+      {favoriteItems.map((item, index) => (
+        <div key={index} className="keen-slider__slide">
+          <Slide item={item} />
+        </div>
+      ))}
+    </div>
   );
 }
