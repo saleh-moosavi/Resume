@@ -1,30 +1,13 @@
-import { IArticle } from "../dataType";
-import { useState, useEffect } from "react";
 import LazyImage from "../components/Image";
+import { FaAngleRight } from "react-icons/fa";
+import useArticles from "../hooks/useArticles";
+import { Loading } from "../components/Loading";
 
 const BlogIndex = () => {
-  const [articles, setArticles] = useState<IArticle[]>([]);
+  const { articles, isLoading, error } = useArticles();
 
-  useEffect(() => {
-    fetchTechNews();
-  }, []);
-
-  const fetchTechNews = async () => {
-    try {
-      const response = await fetch(
-        "https://saurav.tech/NewsAPI/top-headlines/category/technology/us.json",
-      );
-
-      if (!response.ok) {
-        throw new Error("Failed to fetch news");
-      }
-
-      const data = await response.json();
-      setArticles(data.articles);
-    } catch (err) {
-      console.error("Error fetching news:", err);
-    }
-  };
+  if (isLoading) return <Loading />;
+  if (error) throw new Error(error);
 
   return (
     <div className="min-h-screen pt-24">
@@ -72,7 +55,7 @@ const BlogIndex = () => {
                 </p>
 
                 {/* Author and Read More */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mt-auto">
                   <span className="text-xs text-gray-400">
                     {article.author ? `By ${article.author}` : "Unknown author"}
                   </span>
@@ -84,19 +67,7 @@ const BlogIndex = () => {
                     }}
                   >
                     Read More
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
+                    <FaAngleRight className="size-4" />
                   </button>
                 </div>
               </div>
