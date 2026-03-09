@@ -16,9 +16,11 @@ function App() {
       }}
     >
       <Header />
-      <Suspense fallback={<Loading />}>
-        <Outlet />
-      </Suspense>
+      <main className="min-h-screen">
+        <Suspense fallback={<Loading />}>
+          <Outlet />
+        </Suspense>
+      </main>
       <Footer />
     </themeContext.Provider>
   );

@@ -13,9 +13,9 @@ const BlogIndex = () => {
   if (error) throw new Error(error);
 
   return (
-    <div className="min-h-screen pt-24">
+    <div className="min-h-screen pt-20  pb-10">
       {/* News Grid */}
-      <div className="max-w-7xl mx-auto px-8 py-8">
+      <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article, index) => (
             <Card
