@@ -156,7 +156,7 @@ export const myJobs = [
   {
     title: "Front End Developer",
     company: "Rastaar",
-    date: "11/2025 - 02/2026",
+    date: "11/2025 - 01/2026",
     time: "Project Oriented",
     type: "Remote",
     description: [
