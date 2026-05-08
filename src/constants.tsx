@@ -171,7 +171,7 @@ export const myJobs = [
   {
     title: "Front End Developer",
     company: "Atlas Land",
-    date: "01/2025 - 10/2025",
+    date: "01/2025 - 09/2025",
     time: "Full Time",
     type: "Hybrid",
     description: [
@@ -184,11 +184,11 @@ export const myJobs = [
   {
     title: "Front End Developer",
     company: "Almas Niro",
-    date: "10/2023 - 12/2024",
+    date: "11/2023 - 12/2024",
     time: "Full Time",
     type: "On Site",
     description: [
-      "Developed simple internal CRM (attendance, inventory, procurement, work logs, issue tracking) using HTML, CSS, Bootstrap, JavaScript and JQuery",
+      "Developed an internal management system (employee attendance, inventory in/out, shift task logging, company services tracking, and scheduling) using HTML, CSS, Bootstrap, JavaScript, and jQuery",
       "Collaborated with back-end developers on REST API integration",
       "Handled ongoing maintenance, bug fixes, and system improvements",
     ],
@@ -230,7 +230,7 @@ export const myProjects = [
       "Developed a forex trading journal web app using React, TypeScript, and Tailwind CSS, designed for traders to log, review, and analyze their trades. Implemented Recharts for insightful data visualization, react-router-dom for seamless navigation, and react-icons for a clean, intuitive interface that enhances user experience and performance tracking.",
   },
   {
-    name: "Pesonal Website",
+    name: "Musiland",
     code_link: "https://github.com/saleh-moosavi/Musiland",
     demo_link: "",
     description:
