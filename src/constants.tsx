@@ -330,7 +330,7 @@ export const portfolio = [
     isFavor: true,
     img: "./assets/portfolio/next-play-dark.png",
     imgDark: "./assets/portfolio/next-play-light.png",
-    demoLink: "https://next-play-green.vercel.app/",
+    demoLink: "https://next-play-black.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Next-Play",
   },
   {
