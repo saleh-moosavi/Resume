@@ -12,7 +12,7 @@ export default function LazyImage({ src, alt }: { src: string; alt: string }) {
           observer.disconnect();
         }
       },
-      { rootMargin: "50px" }
+      { rootMargin: "50px" },
     );
 
     if (imgRef.current) {

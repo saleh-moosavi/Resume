@@ -18,7 +18,7 @@ export default function LinkButton({
     <Link
       to={link}
       target="_blank"
-      className={`flex items-center gap-2 ${classes} p-2 rounded-lg transition-all duration-200`}
+      className={`flex items-center gap-2 ${classes} p-2 rounded-lg text-xs font-semibold md:text-sm md:font-normal transition-all duration-200`}
     >
       {icon && <span className="*:size-5">{icon}</span>}
       {children}

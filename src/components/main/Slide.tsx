@@ -1,4 +1,3 @@
-import Badge from "../Badge";
 import LazyImage from "../Image";
 import { useContext } from "react";
 import LinkButton from "../LinkButton";
@@ -14,22 +13,14 @@ export default function Slide({ item }: { item: portfolioType }) {
         src={item.imgDark ? (isDark ? item.imgDark : item.img) : item.img}
         alt={item.title}
       />
-      <section className="translate-y-full group-hover:translate-y-0 absolute inset-0 flex flex-col justify-start items-center gap-5 bg-my-black/50 backdrop-blur-md text-my-white p-5 transition-all duration-300">
+      <section className="translate-y-full group-hover:translate-y-0 absolute inset-0 flex flex-col justify-center lg:justify-start items-center gap-5 bg-my-black/50 backdrop-blur-md text-my-white p-5 transition-all duration-300">
         <h2 className="text-lg font-bold text-center select-none">
           {item.title}
         </h2>
-        <p className="text-sm md:text-sm text-center select-none">
+        <p className="text-sm hidden md:block text-justify select-none">
           {item.desc}
         </p>
-        <ul className="flex flex-wrap gap-2 items-center *:inline-block mt-5">
-          <li className="font-semibold">Techs : </li>
-          {item.techs.map((tech: string, index: number) => (
-            <li key={index}>
-              <Badge>{tech}</Badge>
-            </li>
-          ))}
-        </ul>
-        <div className="flex items-center gap-5 mt-auto ">
+        <div className="flex items-center gap-5 lg:mt-auto">
           {item.demoLink && (
             <LinkButton
               link={item.demoLink}
