@@ -223,11 +223,18 @@ export const myProjects = [
       "Developed a responsive personal portfolio using React, TypeScript, and Vite, featuring a dark/light mode toggle via the Context API for global state. Implemented react-router-dom for navigation, Tailwind for styling, and Swiper for dynamic sliders. Optimized with React Suspense and lazy loading.",
   },
   {
-    name: "Forex Journal",
-    code_link: "https://github.com/saleh-moosavi/Forex-Journal",
-    demo_link: "https://forex-journal.vercel.app/",
+    name: "FAnime",
+    code_link: "https://github.com/saleh-moosavi/Filimora",
+    demo_link: "https://filimora.vercel.app/",
     description:
-      "Developed a forex trading journal web app using React, TypeScript, and Tailwind CSS, designed for traders to log, review, and analyze their trades. Implemented Recharts for insightful data visualization, react-router-dom for seamless navigation, and react-icons for a clean, intuitive interface that enhances user experience and performance tracking.",
+      "Built an interactive anime discovery platform using React, TypeScript, and Redux Toolkit, featuring real-time API integration to browse, search, and explore detailed information about anime series. Implemented React Router for seamless navigation, Swiper for dynamic sliders, and a personalized favorites list for saving shows. Styled with Tailwind CSS and optimized with lazy loading for enhanced performance.",
+  },
+  {
+    name: "Next-Play",
+    code_link: "https://github.com/saleh-moosavi/Next-Play",
+    demo_link: "https://next-play-black.vercel.app/",
+    description:
+      "Developed a modern game store and content platform using Next.js 16 and React 19, combining web scraping with API integration to deliver real-time game data, articles, and trailers. Utilized Cheerio for scraping, Zustand for state management, and React Query for efficient data caching. Styled with Tailwind CSS 4 and enhanced with Keen Slider for interactive carousels, featuring a sleek interface for browsing and purchasing games.",
   },
   {
     name: "Musiland",
@@ -235,6 +242,13 @@ export const myProjects = [
     demo_link: "",
     description:
       "Built a full-stack music streaming and content management platform with Next.js, TypeScript, and Tailwind on the frontend, using Zustand, Axios, and Zod for state and form handling. The Node.js, Express, and MongoDB backend enables secure authentication and an admin dashboard within a modular RESTful architecture.",
+  },
+  {
+    name: "Forex Journal",
+    code_link: "https://github.com/saleh-moosavi/Forex-Journal",
+    demo_link: "https://forex-journal.vercel.app/",
+    description:
+      "Developed a forex trading journal web app using React, TypeScript, and Tailwind CSS, designed for traders to log, review, and analyze their trades. Implemented Recharts for insightful data visualization, react-router-dom for seamless navigation, and react-icons for a clean, intuitive interface that enhances user experience and performance tracking.",
   },
 ];
 export const myLinks = [
@@ -289,7 +303,7 @@ export const portfolio = [
   },
   {
     id: 1,
-    title: "Fanime",
+    title: "FAnime",
     desc: "An interactive anime discovery platform that lets you browse, search, and explore detailed information about your favorite anime series in real-time. You can save shows to a personalized favorites list and enjoy seamless navigation throughout the app.",
     techs: [
       "React",
