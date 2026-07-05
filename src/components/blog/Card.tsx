@@ -10,7 +10,7 @@ export default function Card({
   setSelectedArticle: (item: IArticle | null) => void;
 }) {
   return (
-    <article className="bg-white rounded-xl h-full shadow-md shadow-purple-400 dark:shadow-blue-400 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+    <article className="bg-white dark:bg-my-black rounded-xl h-full shadow-md shadow-purple-400 dark:shadow-blue-400 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
       {/* Article Image */}
       {article.urlToImage ? (
         <div className="h-48 overflow-hidden object-cover hover:scale-105 transition-transform duration-300">
@@ -29,28 +29,28 @@ export default function Card({
           <span className="text-xs font-medium text-purple-600 bg-purple-100 px-2 py-1 rounded-md">
             {article.source?.name || "Tech News"}
           </span>
-          <span className="text-xs text-gray-500">
+          <span className="text-xs text-gray-500 dark:text-gray-300">
             {article.publishedAt.split("T")[0]}
           </span>
         </div>
 
         {/* Title */}
-        <h2 className="text-xl font-bold text-gray-800 mb-3 line-clamp-1 hover:text-purple-600 transition-colors">
+        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-300 mb-3 line-clamp-1 hover:text-purple-600 transition-colors">
           {article.title}
         </h2>
 
         {/* Description */}
-        <p className="text-gray-600 text-sm mb-4 line-clamp-1">
+        <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-1">
           {article.description || article.content || "No description available"}
         </p>
 
         {/* Author and Read More */}
         <div className="flex items-center justify-between mt-auto">
-          <span className="text-xs text-gray-500">
+          <span className="text-xs text-gray-500 dark:text-gray-300">
             {article.author ? `By ${article.author}` : "Unknown author"}
           </span>
           <button
-            className="text-purple-600 hover:text-purple-700 font-medium text-sm flex items-center gap-1"
+            className="text-purple-600 dark:text-purple-400 hover:text-purple-700 font-medium text-sm flex items-center gap-1"
             onClick={() => setSelectedArticle(article)}
           >
             Read More

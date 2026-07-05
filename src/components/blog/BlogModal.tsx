@@ -14,7 +14,7 @@ export default function BlogModal({
       onClick={() => setSelectedArticle(null)}
     >
       <div
-        className="bg-white rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto"
+        className="bg-white dark:bg-my-black rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header with Image */}
@@ -33,28 +33,28 @@ export default function BlogModal({
             <span className="text-sm font-medium text-purple-600 bg-purple-100 px-2 py-1 rounded-lg">
               {selectedArticle.source?.name}
             </span>
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-gray-500 dark:text-gray-300">
               {selectedArticle.publishedAt.split("T")[0]}
             </span>
           </div>
 
           {/* Title */}
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-justify">
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-300 mb-4 text-justify">
             {selectedArticle.title}
           </h2>
 
           {/* Author */}
           {selectedArticle.author && (
-            <p className="text-gray-500 mb-6">By {selectedArticle.author}</p>
+            <p className="text-gray-500 dark:text-gray-300 mb-6">By {selectedArticle.author}</p>
           )}
 
           {/* Description */}
           {selectedArticle.description && (
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-700 mb-2">
+              <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
                 Summary
               </h3>
-              <p className="text-gray-600 leading-relaxed text-justify">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
                 {selectedArticle.description}
               </p>
             </div>
@@ -63,10 +63,10 @@ export default function BlogModal({
           {/* Content */}
           {selectedArticle.content && (
             <div className="mb-6 text-justify">
-              <h3 className="text-lg font-semibold text-gray-700 mb-2">
+              <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
                 Full Story
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 {selectedArticle.content}
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function BlogModal({
             </a>
             <button
               onClick={() => setSelectedArticle(null)}
-              className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
+              className="px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
             >
               Close
             </button>
