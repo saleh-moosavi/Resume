@@ -1,7 +1,6 @@
 import { Dispatch, ReactNode, SetStateAction } from "react";
 
 export interface portfolioType {
-  id: number;
   title: string;
   desc: string;
   techs: string[];

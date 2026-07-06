@@ -278,7 +278,6 @@ export const myLanguages = [{ name: "English", level: "Fluent" }];
 /* Portfolio Details */
 export const portfolio = [
   {
-    id: 0,
     title: "Musiland",
     desc: "A full-featured music streaming and content management platform that allows users to discover, play, and manage their favorite tracks. Includes a comprehensive admin dashboard for content moderation, user management, and platform analytics.",
     techs: [
@@ -302,7 +301,6 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Musiland",
   },
   {
-    id: 1,
     title: "FAnime",
     desc: "An interactive anime discovery platform that lets you browse, search, and explore detailed information about your favorite anime series in real-time. You can save shows to a personalized favorites list and enjoy seamless navigation throughout the app.",
     techs: [
@@ -320,7 +318,6 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Filimora",
   },
   {
-    id: 2,
     title: "Next-Play",
     desc: "A modern game store and content platform that combines web scraping with API integration to deliver real-time game data, articles, and trailers.",
     techs: [
@@ -339,7 +336,6 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Next-Play",
   },
   {
-    id: 3,
     title: "Hobby Verse",
     desc: "A collection of classic mini-games and tools including Tic Tac Toe, Word Guessing, Memory Game, Calculator, Number Guessing, Minesweeper, Unit Converter, Rock Paper Scissors, and Password Generator. Built with React and Sass for a polished, interactive experience.",
     techs: ["TypeScript", "React", "Sass", "Tailwind", "React_Icons"],
@@ -349,7 +345,6 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Tic-Tac-Toe",
   },
   {
-    id: 4,
     title: "Foodie",
     desc: "a visually appealing and user-friendly online food website designed to inspire and engage food enthusiasts. It features a clean and modern layout with sections for trending recipes, categorized meal options and a collection of delicious dishes.",
     techs: ["TypeScript", "React", "Tailwind", "React_Icons"],
@@ -359,7 +354,6 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Foodie",
   },
   {
-    id: 5,
     title: "Incore",
     desc: "The Incore landing page is designed using the glassmorphism style, which features a frosted glass-like effect with semi-transparent backgrounds, soft blur, and vibrant colors, giving it a modern and sleek appearance",
     techs: ["TypeScript", "React", "Tailwind", "React_Icons"],
@@ -369,7 +363,6 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Incore",
   },
   {
-    id: 6,
     title: "Forex Journal",
     desc: "Forex Journal is A practical and intuitive tool built for forex traders to log and review their trades effectively. The app helping users improve their trading strategies and track performance through insightful data visualization and clean design.",
     techs: ["TypeScript", "React", "Tailwind", "React_Icons", "React_Router"],
@@ -379,7 +372,6 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Forex-Journal",
   },
   {
-    id: 7,
     title: "Zenith",
     desc: "Zenith is A clean and minimal landing page showcasing modern business solutions. Designed with a subtle animations to highlight services and build trust through simplicity and clarity.",
     techs: ["React", "Tailwind", "TypeScript", "React_Icons"],
@@ -389,7 +381,6 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Zenith",
   },
   {
-    id: 8,
     title: "Coffee Crave",
     desc: "A stylish and classic home page for a coffee brand, combining warm tones and elegant typography. Focused on creating a cozy, inviting atmosphere that highlights products and brand story.",
     techs: ["TypeScript", "React", "Tailwind", "React_Icons"],
@@ -399,7 +390,6 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Coffee-Crave",
   },
   {
-    id: 9,
     title: "Glow Up",
     desc: "An elegant landing page for a beauty brand, featuring soft colors, smooth animations, and a clean layout. Designed to showcase products beautifully while ensuring a seamless and responsive user experience.",
     techs: ["React", "Swiper", "Tailwind", "TypeScript", "React_Icons"],
@@ -409,7 +399,14 @@ export const portfolio = [
     codeLink: "https://github.com/saleh-moosavi/Glow-Up",
   },
   {
-    id: 10,
+    title: "WebJoy",
+    desc: "WebJoy is a remote gamepad control system. It allows a client to connect their physical gamepad to a host computer over a network (or localhost) and control it as a virtual Xbox 360 controller.",
+    techs: ["HTML", "CSS", "JavaScript", "Python"],
+    isFavor: false,
+    img: "./assets/portfolio/webjoy.png",
+    codeLink: "https://github.com/saleh-moosavi/WebJoy",
+  },
+  {
     title: "Weather Wise",
     desc: "A simple and clean weather dashboard that fetches real-time weather data and forecasts for any city using a weather API. Just enter a location name to get current conditions, temperature, and more.",
     techs: ["HTML", "CSS", "JavaScript"],

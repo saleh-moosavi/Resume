@@ -11,10 +11,10 @@ export default function WorksIndex() {
   return (
     <div className="w-screen min-h-screen pb-10 pt-24">
       <section className="w-full grid justify-items-center gap-5 md:gap-10 md:grid-cols-2 lg:grid-cols-3 px-5 md:px-20">
-        {portfolio.map((item) => {
+        {portfolio.map((item, index) => {
           return (
             <div
-              key={item.id}
+              key={"work-" + index + ":" + item.title}
               className="move-in-down h-full flex flex-col justify-between"
             >
               <section className="mb-3">
