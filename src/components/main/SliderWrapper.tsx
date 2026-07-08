@@ -4,7 +4,9 @@ import { portfolio } from "../../constants";
 import { useKeenSlider } from "keen-slider/react";
 
 export default function SliderWrapper() {
-  const favoriteItems = portfolio.filter((item) => item.isFavor);
+  const favoriteItems = portfolio.filter(
+    (item) => item.isFavor && item.visible,
+  );
 
   const [sliderRef] = useKeenSlider({
     breakpoints: {
@@ -21,7 +23,10 @@ export default function SliderWrapper() {
   return (
     <div ref={sliderRef} className="keen-slider">
       {favoriteItems.map((item, index) => (
-        <div key={"slider-" + index + ":" + item.title} className="keen-slider__slide">
+        <div
+          key={"slider-" + index + ":" + item.title}
+          className="keen-slider__slide"
+        >
           <Slide item={item} />
         </div>
       ))}

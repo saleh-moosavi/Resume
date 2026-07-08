@@ -214,43 +214,6 @@ export const myContactInfo = [
   { title: "Email", description: "salehmoosavi77@gmail.com" },
   { title: "Military Status", description: "Educational Exemption" },
 ];
-export const myProjects = [
-  {
-    name: "Pesonal Website",
-    code_link: "https://github.com/saleh-moosavi/Resume",
-    demo_link: "https://saleh-moosavi.vercel.app/",
-    description:
-      "Developed a responsive personal portfolio using React, TypeScript, and Vite, featuring a dark/light mode toggle via the Context API for global state. Implemented react-router-dom for navigation, Tailwind for styling, and Swiper for dynamic sliders. Optimized with React Suspense and lazy loading.",
-  },
-  {
-    name: "FAnime",
-    code_link: "https://github.com/saleh-moosavi/Filimora",
-    demo_link: "https://filimora.vercel.app/",
-    description:
-      "Built an interactive anime discovery platform using React, TypeScript, and Redux Toolkit, featuring real-time API integration to browse, search, and explore detailed information about anime series. Implemented React Router for seamless navigation, Swiper for dynamic sliders, and a personalized favorites list for saving shows. Styled with Tailwind CSS and optimized with lazy loading for enhanced performance.",
-  },
-  {
-    name: "Next-Play",
-    code_link: "https://github.com/saleh-moosavi/Next-Play",
-    demo_link: "https://next-play-black.vercel.app/",
-    description:
-      "Developed a modern game store and content platform using Next.js 16 and React 19, combining web scraping with API integration to deliver real-time game data, articles, and trailers. Utilized Cheerio for scraping, Zustand for state management, and React Query for efficient data caching. Styled with Tailwind CSS 4 and enhanced with Keen Slider for interactive carousels, featuring a sleek interface for browsing and purchasing games.",
-  },
-  {
-    name: "Musiland",
-    code_link: "https://github.com/saleh-moosavi/Musiland",
-    demo_link: "",
-    description:
-      "Built a full-stack music streaming and content management platform with Next.js, TypeScript, and Tailwind on the frontend, using Zustand, Axios, and Zod for state and form handling. The Node.js, Express, and MongoDB backend enables secure authentication and an admin dashboard within a modular RESTful architecture.",
-  },
-  {
-    name: "Forex Journal",
-    code_link: "https://github.com/saleh-moosavi/Forex-Journal",
-    demo_link: "https://forex-journal.vercel.app/",
-    description:
-      "Developed a forex trading journal web app using React, TypeScript, and Tailwind CSS, designed for traders to log, review, and analyze their trades. Implemented Recharts for insightful data visualization, react-router-dom for seamless navigation, and react-icons for a clean, intuitive interface that enhances user experience and performance tracking.",
-  },
-];
 export const myLinks = [
   {
     title: "Github",
@@ -278,8 +241,23 @@ export const myLanguages = [{ name: "English", level: "Fluent" }];
 /* Portfolio Details */
 export const portfolio = [
   {
+    title: "Pesonal Website",
+    desc: "",
+    cv_desc:
+      "Developed a responsive personal portfolio using React, TypeScript, and Vite, featuring a dark/light mode toggle via the Context API for global state. Implemented react-router-dom for navigation, Tailwind for styling, and Swiper for dynamic sliders. Optimized with React Suspense and lazy loading.",
+    techs: ["React", "TypeScript", "Tailwind", "React_Router", "Swiper"],
+    isFavor: false,
+    isForCV: true,
+    visible: false,
+    img: "",
+    codeLink: "https://github.com/saleh-moosavi/Resume",
+    demoLink: "https://saleh-moosavi.vercel.app/",
+  },
+  {
     title: "Musiland",
     desc: "A full-featured music streaming and content management platform that allows users to discover, play, and manage their favorite tracks. Includes a comprehensive admin dashboard for content moderation, user management, and platform analytics.",
+    cv_desc:
+      "Built a full-stack music streaming and content management platform with Next.js, TypeScript, and Tailwind on the frontend, using Zustand, Axios, and Zod for state and form handling. The Node.js, Express, and MongoDB backend enables secure authentication and an admin dashboard within a modular RESTful architecture.",
     techs: [
       "React",
       "Tailwind",
@@ -296,6 +274,8 @@ export const portfolio = [
       "MongoDB",
     ],
     isFavor: true,
+    isForCV: true,
+    visible: true,
     img: "./assets/portfolio/musiland-dark.png",
     imgDark: "./assets/portfolio/musiland-light.png",
     codeLink: "https://github.com/saleh-moosavi/Musiland",
@@ -303,6 +283,8 @@ export const portfolio = [
   {
     title: "FAnime",
     desc: "An interactive anime discovery platform that lets you browse, search, and explore detailed information about your favorite anime series in real-time. You can save shows to a personalized favorites list and enjoy seamless navigation throughout the app.",
+    cv_desc:
+      "Developed a responsive personal portfolio using React, TypeScript, and Vite, featuring a dark/light mode toggle via the Context API for global state. Implemented react-router-dom for navigation, Tailwind for styling, and Swiper for dynamic sliders. Optimized with React Suspense and lazy loading.",
     techs: [
       "React",
       "Swipper",
@@ -313,6 +295,8 @@ export const portfolio = [
       "Redux_Toolkit",
     ],
     isFavor: true,
+    isForCV: true,
+    visible: true,
     img: "./assets/portfolio/filimora.png",
     demoLink: "https://filimora.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Filimora",
@@ -320,6 +304,8 @@ export const portfolio = [
   {
     title: "Next-Play",
     desc: "A modern game store and content platform that combines web scraping with API integration to deliver real-time game data, articles, and trailers.",
+    cv_desc:
+      "Developed a modern game store and content platform using Next.js 16 and React 19, combining web scraping with API integration to deliver real-time game data, articles, and trailers. Utilized Cheerio for scraping, Zustand for state management, and React Query for efficient data caching. Styled with Tailwind CSS 4 and enhanced with Keen Slider for interactive carousels, featuring a sleek interface for browsing and purchasing games.",
     techs: [
       "React",
       "Next.js",
@@ -330,6 +316,8 @@ export const portfolio = [
       "Keen_Slider",
     ],
     isFavor: true,
+    isForCV: true,
+    visible: true,
     img: "./assets/portfolio/next-play-dark.png",
     imgDark: "./assets/portfolio/next-play-light.png",
     demoLink: "https://next-play-black.vercel.app/",
@@ -340,6 +328,8 @@ export const portfolio = [
     desc: "A collection of classic mini-games and tools including Tic Tac Toe, Word Guessing, Memory Game, Calculator, Number Guessing, Minesweeper, Unit Converter, Rock Paper Scissors, and Password Generator. Built with React and Sass for a polished, interactive experience.",
     techs: ["TypeScript", "React", "Sass", "Tailwind", "React_Icons"],
     isFavor: false,
+    isForCV: false,
+    visible: true,
     img: "./assets/portfolio/tic-tac-toe.png",
     demoLink: "https://tic-tac-toe-plays.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Tic-Tac-Toe",
@@ -349,6 +339,8 @@ export const portfolio = [
     desc: "a visually appealing and user-friendly online food website designed to inspire and engage food enthusiasts. It features a clean and modern layout with sections for trending recipes, categorized meal options and a collection of delicious dishes.",
     techs: ["TypeScript", "React", "Tailwind", "React_Icons"],
     isFavor: true,
+    isForCV: false,
+    visible: true,
     img: "./assets/portfolio/foodie.png",
     demoLink: "https://online-foodie.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Foodie",
@@ -358,6 +350,8 @@ export const portfolio = [
     desc: "The Incore landing page is designed using the glassmorphism style, which features a frosted glass-like effect with semi-transparent backgrounds, soft blur, and vibrant colors, giving it a modern and sleek appearance",
     techs: ["TypeScript", "React", "Tailwind", "React_Icons"],
     isFavor: false,
+    isForCV: false,
+    visible: true,
     img: "./assets/portfolio/incore.png",
     demoLink: "https://incore.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Incore",
@@ -365,8 +359,12 @@ export const portfolio = [
   {
     title: "Forex Journal",
     desc: "Forex Journal is A practical and intuitive tool built for forex traders to log and review their trades effectively. The app helping users improve their trading strategies and track performance through insightful data visualization and clean design.",
+    cv_desc:
+      "Developed a forex trading journal web app using React, TypeScript, and Tailwind CSS, designed for traders to log, review, and analyze their trades. Implemented Recharts for insightful data visualization, react-router-dom for seamless navigation, and react-icons for a clean, intuitive interface that enhances user experience and performance tracking.",
     techs: ["TypeScript", "React", "Tailwind", "React_Icons", "React_Router"],
     isFavor: true,
+    isForCV: true,
+    visible: true,
     img: "./assets/portfolio/forex-journal.png",
     demoLink: "https://forex-journal.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Forex-Journal",
@@ -376,6 +374,8 @@ export const portfolio = [
     desc: "Zenith is A clean and minimal landing page showcasing modern business solutions. Designed with a subtle animations to highlight services and build trust through simplicity and clarity.",
     techs: ["React", "Tailwind", "TypeScript", "React_Icons"],
     isFavor: false,
+    isForCV: false,
+    visible: true,
     img: "./assets/portfolio/zenith.png",
     demoLink: "https://co-zenith.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Zenith",
@@ -385,6 +385,8 @@ export const portfolio = [
     desc: "A stylish and classic home page for a coffee brand, combining warm tones and elegant typography. Focused on creating a cozy, inviting atmosphere that highlights products and brand story.",
     techs: ["TypeScript", "React", "Tailwind", "React_Icons"],
     isFavor: false,
+    isForCV: false,
+    visible: true,
     img: "./assets/portfolio/coffee-crave.png",
     demoLink: "https://coffee-crave.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Coffee-Crave",
@@ -394,6 +396,8 @@ export const portfolio = [
     desc: "An elegant landing page for a beauty brand, featuring soft colors, smooth animations, and a clean layout. Designed to showcase products beautifully while ensuring a seamless and responsive user experience.",
     techs: ["React", "Swiper", "Tailwind", "TypeScript", "React_Icons"],
     isFavor: false,
+    isForCV: false,
+    visible: true,
     img: "./assets/portfolio/glow-up.png",
     demoLink: "https://glow-up-xi.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Glow-Up",
@@ -403,6 +407,8 @@ export const portfolio = [
     desc: "WebJoy is a remote gamepad control system. It allows a client to connect their physical gamepad to a host computer over a network (or localhost) and control it as a virtual Xbox 360 controller.",
     techs: ["HTML", "CSS", "JavaScript", "Python"],
     isFavor: false,
+    isForCV: false,
+    visible: true,
     img: "./assets/portfolio/webjoy.png",
     codeLink: "https://github.com/saleh-moosavi/WebJoy",
   },
@@ -411,6 +417,8 @@ export const portfolio = [
     desc: "A simple and clean weather dashboard that fetches real-time weather data and forecasts for any city using a weather API. Just enter a location name to get current conditions, temperature, and more.",
     techs: ["HTML", "CSS", "JavaScript"],
     isFavor: false,
+    isForCV: false,
+    visible: true,
     img: "./assets/portfolio/weather-wise.png",
     demoLink: "https://weather-wise-silk.vercel.app/",
     codeLink: "https://github.com/saleh-moosavi/Weather-Wise",

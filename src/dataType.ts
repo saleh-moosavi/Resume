@@ -3,8 +3,11 @@ import { Dispatch, ReactNode, SetStateAction } from "react";
 export interface portfolioType {
   title: string;
   desc: string;
+  cv_desc?: string;
   techs: string[];
   isFavor: boolean;
+  isForCV: boolean;
+  visible: boolean;
   img: string;
   imgDark?: string;
   demoLink?: string;
